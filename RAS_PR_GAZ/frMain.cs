@@ -1,21 +1,12 @@
 ﻿using Microsoft.SolverFoundation.Services;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Serialization;
 
 namespace RAS_PR_GAZ
 {
     public partial class frMain : Form
     {
-
         ModelDP _mdp = new ModelDP();
         public frMain()
         {
@@ -25,18 +16,8 @@ namespace RAS_PR_GAZ
         private void frMain_Load(object sender, EventArgs e)
         {
             //скрываем вкладки
-            tPGraph.Parent = null;
-            // Где будем искать .xml-файл с исходными данными 
-            FileInfo fileDefaultUserAppDataPath = new FileInfo(Application.UserAppDataPath.ToString() + @"\\default.xml");
-
-            if (fileDefaultUserAppDataPath.Exists)  // если файл найден, то десериализовать его
-            {
-                //NumberSumDll.cSum ss = new NumberSumDll.cSum();
-                //this.s = ss.LoadData(fileDefaultUserAppDataPath.ToString());
-            }
-            else  // если файла нет, то сформировать его и сериализовать в указанный каталог для последующего вызова
-            {
-                #region -- Загрузка первоначальных значений
+            tPGraph.Parent = null; 
+            #region -- Загрузка первоначальных значений
                
                 // ДП-1
                 _mdp.Rashod_PG_base_DP_1 = 15000d;
@@ -177,9 +158,6 @@ namespace RAS_PR_GAZ
 
                 #endregion -- Загрузка первоначальных значений
 
-                // Сохранить параметры доступа к базе данных на диск для последующего вызова
-                //s.SaveData(s, fileDefaultUserAppDataPath.ToString());
-            }
             #region---
             //Для ДП1
             txtRashod_PG_base_DP_1.Text = _mdp.Rashod_PG_base_DP_1.ToString();
@@ -312,8 +290,122 @@ namespace RAS_PR_GAZ
 
 
 
+        
+
         private void btnCalc_Click(object sender, EventArgs e)
         {
+            
+            if (
+            #region---
+            (txtRashod_PG_base_DP_1.Text == "") ||
+            (txtRashod_PG_base_DPmin_1.Text == "") ||
+            (txtRashod_PG_base_DPmax_1.Text == "") ||
+            (txtRashod_K_base_DP_1.Text == "") ||
+            (txtRashod_K_base_DP_E_1.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_1.Text == "") ||
+            (txtTeor_t_base_DP_1.Text == "") ||
+            (txtTeor_t_base_DPmin_1.Text == "") ||
+            (txtTeor_t_base_DPmax_1.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_1.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_1.Text == "") ||
+            (txtIz_t_uvel_pg_DP_1.Text == "") ||
+
+            (txtRashod_PG_base_DP_2.Text == "") ||
+            (txtRashod_PG_base_DPmin_2.Text == "") ||
+            (txtRashod_PG_base_DPmax_2.Text == "") ||
+            (txtRashod_K_base_DP_2.Text == "") ||
+            (txtRashod_K_base_DP_E_2.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_2.Text == "") ||
+            (txtTeor_t_base_DP_2.Text == "") ||
+            (txtTeor_t_base_DPmin_2.Text == "") ||
+            (txtTeor_t_base_DPmax_2.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_2.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_2.Text == "") ||
+            (txtIz_t_uvel_pg_DP_2.Text == "") ||
+
+            (txtRashod_PG_base_DP_3.Text == "") ||
+            (txtRashod_PG_base_DPmin_3.Text == "") ||
+            (txtRashod_PG_base_DPmax_3.Text == "") ||
+            (txtRashod_K_base_DP_3.Text == "") ||
+            (txtRashod_K_base_DP_E_3.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_3.Text == "") ||
+            (txtTeor_t_base_DP_3.Text == "") ||
+            (txtTeor_t_base_DPmin_3.Text == "") ||
+            (txtTeor_t_base_DPmax_3.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_3.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_3.Text == "") ||
+            (txtIz_t_uvel_pg_DP_3.Text == "") ||
+
+            (txtRashod_PG_base_DP_4.Text == "") ||
+            (txtRashod_PG_base_DPmin_4.Text == "") ||
+            (txtRashod_PG_base_DPmax_4.Text == "") ||
+            (txtRashod_K_base_DP_4.Text == "") ||
+            (txtRashod_K_base_DP_E_4.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_4.Text == "") ||
+            (txtTeor_t_base_DP_4.Text == "") ||
+            (txtTeor_t_base_DPmin_4.Text == "") ||
+            (txtTeor_t_base_DPmax_4.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_4.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_4.Text == "") ||
+            (txtIz_t_uvel_pg_DP_4.Text == "") ||
+
+            (txtRashod_PG_base_DP_5.Text == "") ||
+            (txtRashod_PG_base_DPmin_5.Text == "") ||
+            (txtRashod_PG_base_DPmax_5.Text == "") ||
+            (txtRashod_K_base_DP_5.Text == "") ||
+            (txtRashod_K_base_DP_E_5.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_5.Text == "") ||
+            (txtTeor_t_base_DP_5.Text == "") ||
+            (txtTeor_t_base_DPmin_5.Text == "") ||
+            (txtTeor_t_base_DPmax_5.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_5.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_5.Text == "") ||
+            (txtIz_t_uvel_pg_DP_5.Text == "") ||
+
+            (txtRashod_PG_base_DP_6.Text == "") ||
+            (txtRashod_PG_base_DPmin_6.Text == "") ||
+            (txtRashod_PG_base_DPmax_6.Text == "") ||
+            (txtRashod_K_base_DP_6.Text == "") ||
+            (txtRashod_K_base_DP_E_6.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_6.Text == "") ||
+            (txtTeor_t_base_DP_6.Text == "") ||
+            (txtTeor_t_base_DPmin_6.Text == "") ||
+            (txtTeor_t_base_DPmax_6.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_6.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_6.Text == "") ||
+            (txtIz_t_uvel_pg_DP_6.Text == "") ||
+
+            (txtRashod_PG_base_DP_7.Text == "") ||
+            (txtRashod_PG_base_DPmin_7.Text == "") ||
+            (txtRashod_PG_base_DPmax_7.Text == "") ||
+            (txtRashod_K_base_DP_7.Text == "") ||
+            (txtRashod_K_base_DP_E_7.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_7.Text == "") ||
+            (txtTeor_t_base_DP_7.Text == "") ||
+            (txtTeor_t_base_DPmin_7.Text == "") ||
+            (txtTeor_t_base_DPmax_7.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_7.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_7.Text == "") ||
+            (txtIz_t_uvel_pg_DP_7.Text == "") ||
+
+            (txtRashod_PG_base_DP_8.Text == "") ||
+            (txtRashod_PG_base_DPmin_8.Text == "") ||
+            (txtRashod_PG_base_DPmax_8.Text == "") ||
+            (txtRashod_K_base_DP_8.Text == "") ||
+            (txtRashod_K_base_DP_E_8.Text == "") ||
+            (txtProizvoditelnost_chug_base_DP_8.Text == "") ||
+            (txtTeor_t_base_DP_8.Text == "") ||
+            (txtTeor_t_base_DPmin_8.Text == "") ||
+            (txtTeor_t_base_DPmax_8.Text == "") ||
+            (txtProiz_chug_iz_PG_DP_8.Text == "") ||
+            (txtProiz_chug_uvel_K_DP_8.Text == "") ||
+            (txtIz_t_uvel_pg_DP_8.Text == ""))
+            #endregion---
+            {
+                tPGraph.Parent = null;
+                MessageBox.Show("Не все поля заполнены!", "Ошибка");
+                return;
+            }
             //очищаем
             chart1.Series[0].Points.Clear();
             chart1.Series[1].Points.Clear();
@@ -871,7 +963,7 @@ namespace RAS_PR_GAZ
             }
 
 
-            _mdp.DP1 = Math.Round(choose.GetDouble(modelDPs[0].xId),2);
+            _mdp.DP1 = Math.Round(choose.GetDouble(modelDPs[0].xId), 2);
             _mdp.DP2 = Math.Round(choose.GetDouble(modelDPs[1].xId), 2);
             _mdp.DP3 = Math.Round(choose.GetDouble(modelDPs[2].xId), 2);
             _mdp.DP4 = Math.Round(choose.GetDouble(modelDPs[3].xId), 2);
@@ -880,7 +972,7 @@ namespace RAS_PR_GAZ
             _mdp.DP7 = Math.Round(choose.GetDouble(modelDPs[6].xId), 2);
             _mdp.DP8 = Math.Round(choose.GetDouble(modelDPs[7].xId), 2);
 
-            
+
             txtDP1.Text = _mdp.DP1.ToString();
             txtDP2.Text = _mdp.DP2.ToString();
             txtDP3.Text = _mdp.DP3.ToString();
@@ -897,10 +989,10 @@ namespace RAS_PR_GAZ
                 double a = choose.GetDouble(modelDPs[i].xId);
                 double b = modelDPs[i].Koef;
                 z += a * b;
-                
+
             }
             txtZ.Text = z.ToString();
-              
+
             //график
             this.chart1.Series[0].Points.AddXY("ДП1", txtRashod_PG_base_DP_1.Text);
             this.chart1.Series[0].Points.AddXY("ДП2", txtRashod_PG_base_DP_2.Text);
@@ -920,47 +1012,23 @@ namespace RAS_PR_GAZ
             this.chart1.Series[1].Points.AddXY("ДП7", choose.GetDouble(modelDPs[6].xId));
             this.chart1.Series[1].Points.AddXY("ДП8", choose.GetDouble(modelDPs[7].xId));
 
-            
 
-        }
 
-        private void frMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //#region Ввод параметров
-            //_mdp.Rashod_K_base_DP_1 (Double.Parse(txtt_d_.Text));
-            //ct.SetV_do(Double.Parse(txtV_do.Text));
-            //ct.SetP(Double.Parse(txtP.Text));
-            //ct.SetP_np(Double.Parse(txtP_np.Text));
-            //ct.Sett_nasp(Double.Parse(txtt_nasp.Text));
-            //ct.SetP_atm(Double.Parse(txtP_atm.Text));
-            //ct.SetT_dn(Double.Parse(txtT_dn.Text));
-            //ct.SetT_dk(Double.Parse(txtT_dk.Text));
-            //ct.Setdd(Double.Parse(txtdd.Text));
-            //ct.Setl(Double.Parse(txtl.Text));
-            //ct.SetGamma(Double.Parse(txtGamma.Text));
-            //ct.SetAlpha_dk(Double.Parse(txtAlpha_dk.Text));
-            //ct.SetEpsilon_st(Double.Parse(txtEpsilon_st.Text));
-            //ct.SetKsi(Double.Parse(txtKsi.Text));
-            //ct.SetCO2(Double.Parse(txtCO2.Text));
-            //ct.SetH2O(Double.Parse(txtH2O.Text));
-            //ct.SetO2(Double.Parse(txtO2.Text));
-
-            //#endregion
-            //XmlSerializer formatter = new XmlSerializer(typeof(RAS_PR_GAZ.ModelDP));
-            //using (FileStream fs = new FileStream(Application.UserAppDataPath.ToString() + @"\\save.xml", FileMode.Create))
-            //{
-            //    formatter.Serialize(fs, _mdp);
-            //    fs.Close();
-            //}
         }
 
         private void lim_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //char number = e.KeyChar;
-            //if ((e.KeyChar <= 47 || e.KeyChar >= 58) && number != 8 && number != 44) //цифры, клавиша BackSpace и запятая а ASCII
-            //{
-            //    e.Handled = true;
-            //}
+            e.Handled = !System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"[0,1,2,3,4,5,6,7,8,9,\b]");
+        }
+
+        private void limIZ_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"[0,1,2,3,4,5,6,7,8,9,--,\b]");
+        }
+
+        private void frMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace RAS_PR_GAZ
 {
-    [Serializable]
     class ModelDP
     {
         #region---Надо
@@ -1202,10 +1201,6 @@ namespace RAS_PR_GAZ
         public double DP7 { get; set; }
         public double DP8 { get; set; }
         #endregion---
-
-        private string FileName = Environment.CurrentDirectory.ToString() + "\\calc.xlsm";
-
-        private string StatusMessage { get; set; }
 
 
     }

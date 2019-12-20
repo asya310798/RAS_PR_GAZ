@@ -28,12 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab = new System.Windows.Forms.TabControl();
             this.tPData = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -151,8 +163,6 @@
             this.txtRashod_PG_base_DPmax_1 = new System.Windows.Forms.TextBox();
             this.txtRashod_PG_base_DPmin_1 = new System.Windows.Forms.TextBox();
             this.txtRashod_PG_base_DP_1 = new System.Windows.Forms.TextBox();
-            this.txtZ = new System.Windows.Forms.TextBox();
-            this.btnCalc = new System.Windows.Forms.Button();
             this.GB = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -164,56 +174,179 @@
             this.txtStoimoct_pg = new System.Windows.Forms.TextBox();
             this.txtZapas_k = new System.Windows.Forms.TextBox();
             this.txtRezerf_rashod_pg = new System.Windows.Forms.TextBox();
+            this.btnCalc = new System.Windows.Forms.Button();
             this.tPGraph = new System.Windows.Forms.TabPage();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtDP8 = new System.Windows.Forms.TextBox();
-            this.txtDP7 = new System.Windows.Forms.TextBox();
-            this.txtDP6 = new System.Windows.Forms.TextBox();
-            this.txtDP5 = new System.Windows.Forms.TextBox();
-            this.txtDP4 = new System.Windows.Forms.TextBox();
-            this.txtDP3 = new System.Windows.Forms.TextBox();
             this.txtDP2 = new System.Windows.Forms.TextBox();
+            this.txtDP3 = new System.Windows.Forms.TextBox();
+            this.txtDP4 = new System.Windows.Forms.TextBox();
+            this.txtDP5 = new System.Windows.Forms.TextBox();
+            this.txtDP6 = new System.Windows.Forms.TextBox();
+            this.txtDP7 = new System.Windows.Forms.TextBox();
+            this.txtDP8 = new System.Windows.Forms.TextBox();
+            this.txtZ = new System.Windows.Forms.TextBox();
             this.txtDP1 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.tab.SuspendLayout();
             this.tPData.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.GB.SuspendLayout();
             this.tPGraph.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tab
             // 
             this.tab.Controls.Add(this.tPData);
             this.tab.Controls.Add(this.tPGraph);
-            this.tab.Location = new System.Drawing.Point(1, 21);
+            this.tab.Location = new System.Drawing.Point(3, 13);
             this.tab.Name = "tab";
             this.tab.SelectedIndex = 0;
-            this.tab.Size = new System.Drawing.Size(940, 592);
+            this.tab.Size = new System.Drawing.Size(940, 588);
             this.tab.TabIndex = 1;
             // 
             // tPData
             // 
+            this.tPData.Controls.Add(this.groupBox2);
             this.tPData.Controls.Add(this.groupBox3);
             this.tPData.Controls.Add(this.groupBox1);
             this.tPData.Controls.Add(this.GB);
+            this.tPData.Controls.Add(this.btnCalc);
             this.tPData.Location = new System.Drawing.Point(4, 22);
             this.tPData.Name = "tPData";
             this.tPData.Padding = new System.Windows.Forms.Padding(3);
-            this.tPData.Size = new System.Drawing.Size(932, 566);
+            this.tPData.Size = new System.Drawing.Size(932, 562);
             this.tPData.TabIndex = 1;
             this.tPData.Text = "Исходнные данные";
             this.tPData.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label34);
+            this.groupBox2.Controls.Add(this.txtZ);
+            this.groupBox2.Location = new System.Drawing.Point(7, 520);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(509, 39);
+            this.groupBox2.TabIndex = 110;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Целевая функция";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(16, 15);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(305, 13);
+            this.label34.TabIndex = 223;
+            this.label34.Text = "Экономия кокса при перераспределении природного газа";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.label28);
+            this.groupBox3.Controls.Add(this.label29);
+            this.groupBox3.Controls.Add(this.label30);
+            this.groupBox3.Controls.Add(this.label31);
+            this.groupBox3.Controls.Add(this.label32);
+            this.groupBox3.Controls.Add(this.label33);
+            this.groupBox3.Controls.Add(this.txtDP8);
+            this.groupBox3.Controls.Add(this.txtDP7);
+            this.groupBox3.Controls.Add(this.txtDP6);
+            this.groupBox3.Controls.Add(this.txtDP5);
+            this.groupBox3.Controls.Add(this.txtDP4);
+            this.groupBox3.Controls.Add(this.txtDP3);
+            this.groupBox3.Controls.Add(this.txtDP2);
+            this.groupBox3.Controls.Add(this.txtDP1);
+            this.groupBox3.Location = new System.Drawing.Point(5, 457);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(920, 57);
+            this.groupBox3.TabIndex = 109;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(18, 33);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(299, 13);
+            this.label35.TabIndex = 224;
+            this.label35.Text = "Расход природного газа после перераспределения, м3/ч";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(868, 14);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(30, 13);
+            this.label26.TabIndex = 220;
+            this.label26.Text = "ДП8";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(809, 14);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(30, 13);
+            this.label27.TabIndex = 219;
+            this.label27.Text = "ДП7";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(751, 14);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(30, 13);
+            this.label28.TabIndex = 218;
+            this.label28.Text = "ДП6";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(692, 14);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(30, 13);
+            this.label29.TabIndex = 217;
+            this.label29.Text = "ДП5";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(636, 14);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(30, 13);
+            this.label30.TabIndex = 216;
+            this.label30.Text = "ДП4";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(577, 14);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(30, 13);
+            this.label31.TabIndex = 215;
+            this.label31.Text = "ДП3";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(518, 14);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(30, 13);
+            this.label32.TabIndex = 214;
+            this.label32.Text = "ДП2";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(461, 14);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(30, 13);
+            this.label33.TabIndex = 213;
+            this.label33.Text = "ДП1";
             // 
             // groupBox1
             // 
@@ -338,7 +471,7 @@
             this.groupBox1.Size = new System.Drawing.Size(920, 346);
             this.groupBox1.TabIndex = 107;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Технологический параметр, ед. изм.";
+            this.groupBox1.Text = "Технологические параметры";
             // 
             // label25
             // 
@@ -526,7 +659,7 @@
             this.txtIz_t_uvel_pg_DP_8.Name = "txtIz_t_uvel_pg_DP_8";
             this.txtIz_t_uvel_pg_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_8.TabIndex = 191;
-            this.txtIz_t_uvel_pg_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_8
             // 
@@ -534,7 +667,7 @@
             this.txtProiz_chug_uvel_K_DP_8.Name = "txtProiz_chug_uvel_K_DP_8";
             this.txtProiz_chug_uvel_K_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_8.TabIndex = 190;
-            this.txtProiz_chug_uvel_K_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_8
             // 
@@ -542,7 +675,7 @@
             this.txtProiz_chug_iz_PG_DP_8.Name = "txtProiz_chug_iz_PG_DP_8";
             this.txtProiz_chug_iz_PG_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_8.TabIndex = 189;
-            this.txtProiz_chug_iz_PG_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_8
             // 
@@ -622,7 +755,7 @@
             this.txtIz_t_uvel_pg_DP_7.Name = "txtIz_t_uvel_pg_DP_7";
             this.txtIz_t_uvel_pg_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_7.TabIndex = 179;
-            this.txtIz_t_uvel_pg_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_7
             // 
@@ -630,7 +763,7 @@
             this.txtProiz_chug_uvel_K_DP_7.Name = "txtProiz_chug_uvel_K_DP_7";
             this.txtProiz_chug_uvel_K_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_7.TabIndex = 178;
-            this.txtProiz_chug_uvel_K_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_7
             // 
@@ -638,7 +771,7 @@
             this.txtProiz_chug_iz_PG_DP_7.Name = "txtProiz_chug_iz_PG_DP_7";
             this.txtProiz_chug_iz_PG_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_7.TabIndex = 177;
-            this.txtProiz_chug_iz_PG_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_7
             // 
@@ -718,7 +851,7 @@
             this.txtIz_t_uvel_pg_DP_6.Name = "txtIz_t_uvel_pg_DP_6";
             this.txtIz_t_uvel_pg_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_6.TabIndex = 167;
-            this.txtIz_t_uvel_pg_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_6
             // 
@@ -726,7 +859,7 @@
             this.txtProiz_chug_uvel_K_DP_6.Name = "txtProiz_chug_uvel_K_DP_6";
             this.txtProiz_chug_uvel_K_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_6.TabIndex = 166;
-            this.txtProiz_chug_uvel_K_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_6
             // 
@@ -734,7 +867,7 @@
             this.txtProiz_chug_iz_PG_DP_6.Name = "txtProiz_chug_iz_PG_DP_6";
             this.txtProiz_chug_iz_PG_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_6.TabIndex = 165;
-            this.txtProiz_chug_iz_PG_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_6
             // 
@@ -814,7 +947,7 @@
             this.txtIz_t_uvel_pg_DP_5.Name = "txtIz_t_uvel_pg_DP_5";
             this.txtIz_t_uvel_pg_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_5.TabIndex = 155;
-            this.txtIz_t_uvel_pg_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_5
             // 
@@ -822,7 +955,7 @@
             this.txtProiz_chug_uvel_K_DP_5.Name = "txtProiz_chug_uvel_K_DP_5";
             this.txtProiz_chug_uvel_K_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_5.TabIndex = 154;
-            this.txtProiz_chug_uvel_K_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_5
             // 
@@ -830,7 +963,7 @@
             this.txtProiz_chug_iz_PG_DP_5.Name = "txtProiz_chug_iz_PG_DP_5";
             this.txtProiz_chug_iz_PG_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_5.TabIndex = 153;
-            this.txtProiz_chug_iz_PG_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_5
             // 
@@ -910,7 +1043,7 @@
             this.txtIz_t_uvel_pg_DP_4.Name = "txtIz_t_uvel_pg_DP_4";
             this.txtIz_t_uvel_pg_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_4.TabIndex = 143;
-            this.txtIz_t_uvel_pg_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_4
             // 
@@ -918,7 +1051,7 @@
             this.txtProiz_chug_uvel_K_DP_4.Name = "txtProiz_chug_uvel_K_DP_4";
             this.txtProiz_chug_uvel_K_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_4.TabIndex = 142;
-            this.txtProiz_chug_uvel_K_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_4
             // 
@@ -926,7 +1059,7 @@
             this.txtProiz_chug_iz_PG_DP_4.Name = "txtProiz_chug_iz_PG_DP_4";
             this.txtProiz_chug_iz_PG_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_4.TabIndex = 141;
-            this.txtProiz_chug_iz_PG_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_4
             // 
@@ -1006,7 +1139,7 @@
             this.txtIz_t_uvel_pg_DP_3.Name = "txtIz_t_uvel_pg_DP_3";
             this.txtIz_t_uvel_pg_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_3.TabIndex = 131;
-            this.txtIz_t_uvel_pg_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_3
             // 
@@ -1014,7 +1147,7 @@
             this.txtProiz_chug_uvel_K_DP_3.Name = "txtProiz_chug_uvel_K_DP_3";
             this.txtProiz_chug_uvel_K_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_3.TabIndex = 130;
-            this.txtProiz_chug_uvel_K_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_3
             // 
@@ -1022,7 +1155,7 @@
             this.txtProiz_chug_iz_PG_DP_3.Name = "txtProiz_chug_iz_PG_DP_3";
             this.txtProiz_chug_iz_PG_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_3.TabIndex = 129;
-            this.txtProiz_chug_iz_PG_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_3
             // 
@@ -1102,7 +1235,7 @@
             this.txtIz_t_uvel_pg_DP_2.Name = "txtIz_t_uvel_pg_DP_2";
             this.txtIz_t_uvel_pg_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_2.TabIndex = 119;
-            this.txtIz_t_uvel_pg_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_2
             // 
@@ -1110,7 +1243,7 @@
             this.txtProiz_chug_uvel_K_DP_2.Name = "txtProiz_chug_uvel_K_DP_2";
             this.txtProiz_chug_uvel_K_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_2.TabIndex = 118;
-            this.txtProiz_chug_uvel_K_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_2
             // 
@@ -1118,7 +1251,7 @@
             this.txtProiz_chug_iz_PG_DP_2.Name = "txtProiz_chug_iz_PG_DP_2";
             this.txtProiz_chug_iz_PG_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_2.TabIndex = 117;
-            this.txtProiz_chug_iz_PG_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_2
             // 
@@ -1198,7 +1331,7 @@
             this.txtIz_t_uvel_pg_DP_1.Name = "txtIz_t_uvel_pg_DP_1";
             this.txtIz_t_uvel_pg_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_1.TabIndex = 107;
-            this.txtIz_t_uvel_pg_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtIz_t_uvel_pg_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_1
             // 
@@ -1206,7 +1339,7 @@
             this.txtProiz_chug_uvel_K_DP_1.Name = "txtProiz_chug_uvel_K_DP_1";
             this.txtProiz_chug_uvel_K_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_1.TabIndex = 106;
-            this.txtProiz_chug_uvel_K_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_uvel_K_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_1
             // 
@@ -1214,7 +1347,7 @@
             this.txtProiz_chug_iz_PG_DP_1.Name = "txtProiz_chug_iz_PG_DP_1";
             this.txtProiz_chug_iz_PG_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_1.TabIndex = 105;
-            this.txtProiz_chug_iz_PG_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            this.txtProiz_chug_iz_PG_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_1
             // 
@@ -1288,24 +1421,6 @@
             this.txtRashod_PG_base_DP_1.TabIndex = 96;
             this.txtRashod_PG_base_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
-            // txtZ
-            // 
-            this.txtZ.Enabled = false;
-            this.txtZ.Location = new System.Drawing.Point(338, 38);
-            this.txtZ.Name = "txtZ";
-            this.txtZ.Size = new System.Drawing.Size(52, 20);
-            this.txtZ.TabIndex = 106;
-            // 
-            // btnCalc
-            // 
-            this.btnCalc.Location = new System.Drawing.Point(799, 66);
-            this.btnCalc.Name = "btnCalc";
-            this.btnCalc.Size = new System.Drawing.Size(110, 23);
-            this.btnCalc.TabIndex = 97;
-            this.btnCalc.Text = "button2";
-            this.btnCalc.UseVisualStyleBackColor = true;
-            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
-            // 
             // GB
             // 
             this.GB.Controls.Add(this.label5);
@@ -1320,15 +1435,15 @@
             this.GB.Controls.Add(this.txtRezerf_rashod_pg);
             this.GB.Location = new System.Drawing.Point(6, 358);
             this.GB.Name = "GB";
-            this.GB.Size = new System.Drawing.Size(919, 105);
+            this.GB.Size = new System.Drawing.Size(919, 93);
             this.GB.TabIndex = 96;
             this.GB.TabStop = false;
-            this.GB.Text = "Наименование показателя, ед. изм.";
+            this.GB.Text = "Показатели";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(536, 48);
+            this.label5.Location = new System.Drawing.Point(536, 43);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 13);
             this.label5.TabIndex = 10;
@@ -1337,7 +1452,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(536, 22);
+            this.label4.Location = new System.Drawing.Point(536, 17);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 13);
             this.label4.TabIndex = 9;
@@ -1346,7 +1461,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 74);
+            this.label3.Location = new System.Drawing.Point(17, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(307, 13);
             this.label3.TabIndex = 8;
@@ -1355,7 +1470,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 48);
+            this.label2.Location = new System.Drawing.Point(17, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 13);
             this.label2.TabIndex = 7;
@@ -1364,7 +1479,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 22);
+            this.label1.Location = new System.Drawing.Point(17, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 13);
             this.label1.TabIndex = 6;
@@ -1372,7 +1487,7 @@
             // 
             // txtStoimoct_k
             // 
-            this.txtStoimoct_k.Location = new System.Drawing.Point(451, 19);
+            this.txtStoimoct_k.Location = new System.Drawing.Point(451, 14);
             this.txtStoimoct_k.Name = "txtStoimoct_k";
             this.txtStoimoct_k.Size = new System.Drawing.Size(52, 20);
             this.txtStoimoct_k.TabIndex = 1;
@@ -1380,7 +1495,7 @@
             // 
             // txtTreb_proiz_chug
             // 
-            this.txtTreb_proiz_chug.Location = new System.Drawing.Point(857, 45);
+            this.txtTreb_proiz_chug.Location = new System.Drawing.Point(857, 40);
             this.txtTreb_proiz_chug.Name = "txtTreb_proiz_chug";
             this.txtTreb_proiz_chug.Size = new System.Drawing.Size(52, 20);
             this.txtTreb_proiz_chug.TabIndex = 5;
@@ -1388,7 +1503,7 @@
             // 
             // txtStoimoct_pg
             // 
-            this.txtStoimoct_pg.Location = new System.Drawing.Point(451, 45);
+            this.txtStoimoct_pg.Location = new System.Drawing.Point(451, 40);
             this.txtStoimoct_pg.Name = "txtStoimoct_pg";
             this.txtStoimoct_pg.Size = new System.Drawing.Size(52, 20);
             this.txtStoimoct_pg.TabIndex = 2;
@@ -1396,7 +1511,7 @@
             // 
             // txtZapas_k
             // 
-            this.txtZapas_k.Location = new System.Drawing.Point(857, 19);
+            this.txtZapas_k.Location = new System.Drawing.Point(857, 14);
             this.txtZapas_k.Name = "txtZapas_k";
             this.txtZapas_k.Size = new System.Drawing.Size(52, 20);
             this.txtZapas_k.TabIndex = 4;
@@ -1404,11 +1519,21 @@
             // 
             // txtRezerf_rashod_pg
             // 
-            this.txtRezerf_rashod_pg.Location = new System.Drawing.Point(451, 71);
+            this.txtRezerf_rashod_pg.Location = new System.Drawing.Point(451, 66);
             this.txtRezerf_rashod_pg.Name = "txtRezerf_rashod_pg";
             this.txtRezerf_rashod_pg.Size = new System.Drawing.Size(52, 20);
             this.txtRezerf_rashod_pg.TabIndex = 3;
             this.txtRezerf_rashod_pg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
+            // 
+            // btnCalc
+            // 
+            this.btnCalc.Location = new System.Drawing.Point(805, 532);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(110, 23);
+            this.btnCalc.TabIndex = 97;
+            this.btnCalc.Text = "Расчёт";
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // tPGraph
             // 
@@ -1416,200 +1541,109 @@
             this.tPGraph.Location = new System.Drawing.Point(4, 22);
             this.tPGraph.Name = "tPGraph";
             this.tPGraph.Padding = new System.Windows.Forms.Padding(3);
-            this.tPGraph.Size = new System.Drawing.Size(932, 566);
+            this.tPGraph.Size = new System.Drawing.Size(932, 562);
             this.tPGraph.TabIndex = 2;
             this.tPGraph.Text = "График";
             this.tPGraph.UseVisualStyleBackColor = true;
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(3, 6);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Расход природного газа в базовом периоде, м3/ч";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Расход природного газа с экономией кокса, м3/ч";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series11.ChartArea = "ChartArea1";
+            series11.Legend = "Legend1";
+            series11.Name = "Расход природного газа в базовом периоде, м3/ч";
+            series12.ChartArea = "ChartArea1";
+            series12.Legend = "Legend1";
+            series12.Name = "Расход природного газа после перераспределения, м3/ч";
+            this.chart1.Series.Add(series11);
+            this.chart1.Series.Add(series12);
             this.chart1.Size = new System.Drawing.Size(771, 474);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label26);
-            this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Controls.Add(this.label28);
-            this.groupBox3.Controls.Add(this.label29);
-            this.groupBox3.Controls.Add(this.label30);
-            this.groupBox3.Controls.Add(this.label31);
-            this.groupBox3.Controls.Add(this.label32);
-            this.groupBox3.Controls.Add(this.label33);
-            this.groupBox3.Controls.Add(this.txtDP8);
-            this.groupBox3.Controls.Add(this.txtDP7);
-            this.groupBox3.Controls.Add(this.txtDP6);
-            this.groupBox3.Controls.Add(this.txtDP5);
-            this.groupBox3.Controls.Add(this.txtDP4);
-            this.groupBox3.Controls.Add(this.txtDP3);
-            this.groupBox3.Controls.Add(this.txtDP2);
-            this.groupBox3.Controls.Add(this.txtDP1);
-            this.groupBox3.Controls.Add(this.btnCalc);
-            this.groupBox3.Controls.Add(this.txtZ);
-            this.groupBox3.Location = new System.Drawing.Point(6, 469);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(920, 93);
-            this.groupBox3.TabIndex = 109;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
-            // 
-            // txtDP8
-            // 
-            this.txtDP8.Enabled = false;
-            this.txtDP8.Location = new System.Drawing.Point(857, 38);
-            this.txtDP8.Name = "txtDP8";
-            this.txtDP8.Size = new System.Drawing.Size(52, 20);
-            this.txtDP8.TabIndex = 114;
-            // 
-            // txtDP7
-            // 
-            this.txtDP7.Enabled = false;
-            this.txtDP7.Location = new System.Drawing.Point(799, 38);
-            this.txtDP7.Name = "txtDP7";
-            this.txtDP7.Size = new System.Drawing.Size(52, 20);
-            this.txtDP7.TabIndex = 113;
-            // 
-            // txtDP6
-            // 
-            this.txtDP6.Enabled = false;
-            this.txtDP6.Location = new System.Drawing.Point(741, 38);
-            this.txtDP6.Name = "txtDP6";
-            this.txtDP6.Size = new System.Drawing.Size(52, 20);
-            this.txtDP6.TabIndex = 112;
-            // 
-            // txtDP5
-            // 
-            this.txtDP5.Enabled = false;
-            this.txtDP5.Location = new System.Drawing.Point(683, 38);
-            this.txtDP5.Name = "txtDP5";
-            this.txtDP5.Size = new System.Drawing.Size(52, 20);
-            this.txtDP5.TabIndex = 111;
-            // 
-            // txtDP4
-            // 
-            this.txtDP4.Enabled = false;
-            this.txtDP4.Location = new System.Drawing.Point(625, 38);
-            this.txtDP4.Name = "txtDP4";
-            this.txtDP4.Size = new System.Drawing.Size(52, 20);
-            this.txtDP4.TabIndex = 110;
-            // 
-            // txtDP3
-            // 
-            this.txtDP3.Enabled = false;
-            this.txtDP3.Location = new System.Drawing.Point(567, 38);
-            this.txtDP3.Name = "txtDP3";
-            this.txtDP3.Size = new System.Drawing.Size(52, 20);
-            this.txtDP3.TabIndex = 109;
-            // 
             // txtDP2
             // 
             this.txtDP2.Enabled = false;
-            this.txtDP2.Location = new System.Drawing.Point(509, 38);
+            this.txtDP2.Location = new System.Drawing.Point(509, 30);
             this.txtDP2.Name = "txtDP2";
             this.txtDP2.Size = new System.Drawing.Size(52, 20);
             this.txtDP2.TabIndex = 108;
             // 
+            // txtDP3
+            // 
+            this.txtDP3.Enabled = false;
+            this.txtDP3.Location = new System.Drawing.Point(567, 30);
+            this.txtDP3.Name = "txtDP3";
+            this.txtDP3.Size = new System.Drawing.Size(52, 20);
+            this.txtDP3.TabIndex = 109;
+            // 
+            // txtDP4
+            // 
+            this.txtDP4.Enabled = false;
+            this.txtDP4.Location = new System.Drawing.Point(625, 30);
+            this.txtDP4.Name = "txtDP4";
+            this.txtDP4.Size = new System.Drawing.Size(52, 20);
+            this.txtDP4.TabIndex = 110;
+            // 
+            // txtDP5
+            // 
+            this.txtDP5.Enabled = false;
+            this.txtDP5.Location = new System.Drawing.Point(683, 30);
+            this.txtDP5.Name = "txtDP5";
+            this.txtDP5.Size = new System.Drawing.Size(52, 20);
+            this.txtDP5.TabIndex = 111;
+            // 
+            // txtDP6
+            // 
+            this.txtDP6.Enabled = false;
+            this.txtDP6.Location = new System.Drawing.Point(741, 30);
+            this.txtDP6.Name = "txtDP6";
+            this.txtDP6.Size = new System.Drawing.Size(52, 20);
+            this.txtDP6.TabIndex = 112;
+            // 
+            // txtDP7
+            // 
+            this.txtDP7.Enabled = false;
+            this.txtDP7.Location = new System.Drawing.Point(799, 30);
+            this.txtDP7.Name = "txtDP7";
+            this.txtDP7.Size = new System.Drawing.Size(52, 20);
+            this.txtDP7.TabIndex = 113;
+            // 
+            // txtDP8
+            // 
+            this.txtDP8.Enabled = false;
+            this.txtDP8.Location = new System.Drawing.Point(857, 30);
+            this.txtDP8.Name = "txtDP8";
+            this.txtDP8.Size = new System.Drawing.Size(52, 20);
+            this.txtDP8.TabIndex = 114;
+            // 
+            // txtZ
+            // 
+            this.txtZ.Enabled = false;
+            this.txtZ.Location = new System.Drawing.Point(449, 12);
+            this.txtZ.Name = "txtZ";
+            this.txtZ.Size = new System.Drawing.Size(52, 20);
+            this.txtZ.TabIndex = 222;
+            // 
             // txtDP1
             // 
             this.txtDP1.Enabled = false;
-            this.txtDP1.Location = new System.Drawing.Point(451, 38);
+            this.txtDP1.Location = new System.Drawing.Point(451, 30);
             this.txtDP1.Name = "txtDP1";
             this.txtDP1.Size = new System.Drawing.Size(52, 20);
             this.txtDP1.TabIndex = 107;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(868, 22);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(30, 13);
-            this.label26.TabIndex = 220;
-            this.label26.Text = "ДП8";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(809, 22);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(30, 13);
-            this.label27.TabIndex = 219;
-            this.label27.Text = "ДП7";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(751, 22);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(30, 13);
-            this.label28.TabIndex = 218;
-            this.label28.Text = "ДП6";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(692, 22);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(30, 13);
-            this.label29.TabIndex = 217;
-            this.label29.Text = "ДП5";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(636, 22);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(30, 13);
-            this.label30.TabIndex = 216;
-            this.label30.Text = "ДП4";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(577, 22);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(30, 13);
-            this.label31.TabIndex = 215;
-            this.label31.Text = "ДП3";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(518, 22);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(30, 13);
-            this.label32.TabIndex = 214;
-            this.label32.Text = "ДП2";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(461, 22);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(30, 13);
-            this.label33.TabIndex = 213;
-            this.label33.Text = "ДП1";
             // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 612);
+            this.ClientSize = new System.Drawing.Size(943, 606);
             this.Controls.Add(this.tab);
             this.Name = "frMain";
             this.Text = "Распределение природного газа в группе доменных печей";
@@ -1617,14 +1651,16 @@
             this.Load += new System.EventHandler(this.frMain_Load);
             this.tab.ResumeLayout(false);
             this.tPData.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.GB.ResumeLayout(false);
             this.GB.PerformLayout();
             this.tPGraph.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1644,8 +1680,29 @@
         private System.Windows.Forms.TextBox txtZapas_k;
         private System.Windows.Forms.TextBox txtRezerf_rashod_pg;
         private System.Windows.Forms.Button btnCalc;
-        private System.Windows.Forms.TextBox txtZ;
+        private System.Windows.Forms.TabPage tPGraph;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -1754,17 +1811,7 @@
         private System.Windows.Forms.TextBox txtRashod_PG_base_DPmax_1;
         private System.Windows.Forms.TextBox txtRashod_PG_base_DPmin_1;
         private System.Windows.Forms.TextBox txtRashod_PG_base_DP_1;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TabPage tPGraph;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtZ;
         private System.Windows.Forms.TextBox txtDP8;
         private System.Windows.Forms.TextBox txtDP7;
         private System.Windows.Forms.TextBox txtDP6;
@@ -1773,14 +1820,6 @@
         private System.Windows.Forms.TextBox txtDP3;
         private System.Windows.Forms.TextBox txtDP2;
         private System.Windows.Forms.TextBox txtDP1;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
     }
 }
 
