@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tab = new System.Windows.Forms.TabControl();
             this.tPData = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label34 = new System.Windows.Forms.Label();
+            this.txtZ = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -46,6 +47,14 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.txtDP8 = new System.Windows.Forms.TextBox();
+            this.txtDP7 = new System.Windows.Forms.TextBox();
+            this.txtDP6 = new System.Windows.Forms.TextBox();
+            this.txtDP5 = new System.Windows.Forms.TextBox();
+            this.txtDP4 = new System.Windows.Forms.TextBox();
+            this.txtDP3 = new System.Windows.Forms.TextBox();
+            this.txtDP2 = new System.Windows.Forms.TextBox();
+            this.txtDP1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -177,15 +186,6 @@
             this.btnCalc = new System.Windows.Forms.Button();
             this.tPGraph = new System.Windows.Forms.TabPage();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.txtDP2 = new System.Windows.Forms.TextBox();
-            this.txtDP3 = new System.Windows.Forms.TextBox();
-            this.txtDP4 = new System.Windows.Forms.TextBox();
-            this.txtDP5 = new System.Windows.Forms.TextBox();
-            this.txtDP6 = new System.Windows.Forms.TextBox();
-            this.txtDP7 = new System.Windows.Forms.TextBox();
-            this.txtDP8 = new System.Windows.Forms.TextBox();
-            this.txtZ = new System.Windows.Forms.TextBox();
-            this.txtDP1 = new System.Windows.Forms.TextBox();
             this.tab.SuspendLayout();
             this.tPData.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -230,7 +230,6 @@
             this.groupBox2.Size = new System.Drawing.Size(509, 39);
             this.groupBox2.TabIndex = 110;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Целевая функция";
             // 
             // label34
             // 
@@ -240,6 +239,14 @@
             this.label34.Size = new System.Drawing.Size(305, 13);
             this.label34.TabIndex = 223;
             this.label34.Text = "Экономия кокса при перераспределении природного газа";
+            // 
+            // txtZ
+            // 
+            this.txtZ.Enabled = false;
+            this.txtZ.Location = new System.Drawing.Point(449, 12);
+            this.txtZ.Name = "txtZ";
+            this.txtZ.Size = new System.Drawing.Size(52, 20);
+            this.txtZ.TabIndex = 222;
             // 
             // groupBox3
             // 
@@ -265,7 +272,6 @@
             this.groupBox3.Size = new System.Drawing.Size(920, 57);
             this.groupBox3.TabIndex = 109;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
             // 
             // label35
             // 
@@ -347,6 +353,70 @@
             this.label33.Size = new System.Drawing.Size(30, 13);
             this.label33.TabIndex = 213;
             this.label33.Text = "ДП1";
+            // 
+            // txtDP8
+            // 
+            this.txtDP8.Enabled = false;
+            this.txtDP8.Location = new System.Drawing.Point(857, 30);
+            this.txtDP8.Name = "txtDP8";
+            this.txtDP8.Size = new System.Drawing.Size(52, 20);
+            this.txtDP8.TabIndex = 114;
+            // 
+            // txtDP7
+            // 
+            this.txtDP7.Enabled = false;
+            this.txtDP7.Location = new System.Drawing.Point(799, 30);
+            this.txtDP7.Name = "txtDP7";
+            this.txtDP7.Size = new System.Drawing.Size(52, 20);
+            this.txtDP7.TabIndex = 113;
+            // 
+            // txtDP6
+            // 
+            this.txtDP6.Enabled = false;
+            this.txtDP6.Location = new System.Drawing.Point(741, 30);
+            this.txtDP6.Name = "txtDP6";
+            this.txtDP6.Size = new System.Drawing.Size(52, 20);
+            this.txtDP6.TabIndex = 112;
+            // 
+            // txtDP5
+            // 
+            this.txtDP5.Enabled = false;
+            this.txtDP5.Location = new System.Drawing.Point(683, 30);
+            this.txtDP5.Name = "txtDP5";
+            this.txtDP5.Size = new System.Drawing.Size(52, 20);
+            this.txtDP5.TabIndex = 111;
+            // 
+            // txtDP4
+            // 
+            this.txtDP4.Enabled = false;
+            this.txtDP4.Location = new System.Drawing.Point(625, 30);
+            this.txtDP4.Name = "txtDP4";
+            this.txtDP4.Size = new System.Drawing.Size(52, 20);
+            this.txtDP4.TabIndex = 110;
+            // 
+            // txtDP3
+            // 
+            this.txtDP3.Enabled = false;
+            this.txtDP3.Location = new System.Drawing.Point(567, 30);
+            this.txtDP3.Name = "txtDP3";
+            this.txtDP3.Size = new System.Drawing.Size(52, 20);
+            this.txtDP3.TabIndex = 109;
+            // 
+            // txtDP2
+            // 
+            this.txtDP2.Enabled = false;
+            this.txtDP2.Location = new System.Drawing.Point(509, 30);
+            this.txtDP2.Name = "txtDP2";
+            this.txtDP2.Size = new System.Drawing.Size(52, 20);
+            this.txtDP2.TabIndex = 108;
+            // 
+            // txtDP1
+            // 
+            this.txtDP1.Enabled = false;
+            this.txtDP1.Location = new System.Drawing.Point(451, 30);
+            this.txtDP1.Name = "txtDP1";
+            this.txtDP1.Size = new System.Drawing.Size(52, 20);
+            this.txtDP1.TabIndex = 107;
             // 
             // groupBox1
             // 
@@ -659,6 +729,7 @@
             this.txtIz_t_uvel_pg_DP_8.Name = "txtIz_t_uvel_pg_DP_8";
             this.txtIz_t_uvel_pg_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_8.TabIndex = 191;
+            this.txtIz_t_uvel_pg_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_8
@@ -667,6 +738,7 @@
             this.txtProiz_chug_uvel_K_DP_8.Name = "txtProiz_chug_uvel_K_DP_8";
             this.txtProiz_chug_uvel_K_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_8.TabIndex = 190;
+            this.txtProiz_chug_uvel_K_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_8
@@ -675,6 +747,7 @@
             this.txtProiz_chug_iz_PG_DP_8.Name = "txtProiz_chug_iz_PG_DP_8";
             this.txtProiz_chug_iz_PG_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_8.TabIndex = 189;
+            this.txtProiz_chug_iz_PG_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_8
@@ -683,6 +756,7 @@
             this.txtTeor_t_base_DPmax_8.Name = "txtTeor_t_base_DPmax_8";
             this.txtTeor_t_base_DPmax_8.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_8.TabIndex = 188;
+            this.txtTeor_t_base_DPmax_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_8
@@ -691,6 +765,7 @@
             this.txtTeor_t_base_DPmin_8.Name = "txtTeor_t_base_DPmin_8";
             this.txtTeor_t_base_DPmin_8.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_8.TabIndex = 187;
+            this.txtTeor_t_base_DPmin_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_8
@@ -699,6 +774,7 @@
             this.txtTeor_t_base_DP_8.Name = "txtTeor_t_base_DP_8";
             this.txtTeor_t_base_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_8.TabIndex = 186;
+            this.txtTeor_t_base_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_8
@@ -707,6 +783,7 @@
             this.txtProizvoditelnost_chug_base_DP_8.Name = "txtProizvoditelnost_chug_base_DP_8";
             this.txtProizvoditelnost_chug_base_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_8.TabIndex = 185;
+            this.txtProizvoditelnost_chug_base_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_8
@@ -715,6 +792,7 @@
             this.txtRashod_K_base_DP_E_8.Name = "txtRashod_K_base_DP_E_8";
             this.txtRashod_K_base_DP_E_8.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_8.TabIndex = 184;
+            this.txtRashod_K_base_DP_E_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_8
@@ -723,6 +801,7 @@
             this.txtRashod_K_base_DP_8.Name = "txtRashod_K_base_DP_8";
             this.txtRashod_K_base_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_8.TabIndex = 183;
+            this.txtRashod_K_base_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_8
@@ -731,6 +810,7 @@
             this.txtRashod_PG_base_DPmax_8.Name = "txtRashod_PG_base_DPmax_8";
             this.txtRashod_PG_base_DPmax_8.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_8.TabIndex = 182;
+            this.txtRashod_PG_base_DPmax_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_8
@@ -739,6 +819,7 @@
             this.txtRashod_PG_base_DPmin_8.Name = "txtRashod_PG_base_DPmin_8";
             this.txtRashod_PG_base_DPmin_8.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_8.TabIndex = 181;
+            this.txtRashod_PG_base_DPmin_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_8
@@ -747,6 +828,7 @@
             this.txtRashod_PG_base_DP_8.Name = "txtRashod_PG_base_DP_8";
             this.txtRashod_PG_base_DP_8.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_8.TabIndex = 180;
+            this.txtRashod_PG_base_DP_8.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_7
@@ -755,6 +837,7 @@
             this.txtIz_t_uvel_pg_DP_7.Name = "txtIz_t_uvel_pg_DP_7";
             this.txtIz_t_uvel_pg_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_7.TabIndex = 179;
+            this.txtIz_t_uvel_pg_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_7
@@ -763,6 +846,7 @@
             this.txtProiz_chug_uvel_K_DP_7.Name = "txtProiz_chug_uvel_K_DP_7";
             this.txtProiz_chug_uvel_K_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_7.TabIndex = 178;
+            this.txtProiz_chug_uvel_K_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_7
@@ -771,6 +855,7 @@
             this.txtProiz_chug_iz_PG_DP_7.Name = "txtProiz_chug_iz_PG_DP_7";
             this.txtProiz_chug_iz_PG_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_7.TabIndex = 177;
+            this.txtProiz_chug_iz_PG_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_7
@@ -779,6 +864,7 @@
             this.txtTeor_t_base_DPmax_7.Name = "txtTeor_t_base_DPmax_7";
             this.txtTeor_t_base_DPmax_7.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_7.TabIndex = 176;
+            this.txtTeor_t_base_DPmax_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_7
@@ -787,6 +873,7 @@
             this.txtTeor_t_base_DPmin_7.Name = "txtTeor_t_base_DPmin_7";
             this.txtTeor_t_base_DPmin_7.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_7.TabIndex = 175;
+            this.txtTeor_t_base_DPmin_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_7
@@ -795,6 +882,7 @@
             this.txtTeor_t_base_DP_7.Name = "txtTeor_t_base_DP_7";
             this.txtTeor_t_base_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_7.TabIndex = 174;
+            this.txtTeor_t_base_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_7
@@ -803,6 +891,7 @@
             this.txtProizvoditelnost_chug_base_DP_7.Name = "txtProizvoditelnost_chug_base_DP_7";
             this.txtProizvoditelnost_chug_base_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_7.TabIndex = 173;
+            this.txtProizvoditelnost_chug_base_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_7
@@ -811,6 +900,7 @@
             this.txtRashod_K_base_DP_E_7.Name = "txtRashod_K_base_DP_E_7";
             this.txtRashod_K_base_DP_E_7.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_7.TabIndex = 172;
+            this.txtRashod_K_base_DP_E_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_7
@@ -819,6 +909,7 @@
             this.txtRashod_K_base_DP_7.Name = "txtRashod_K_base_DP_7";
             this.txtRashod_K_base_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_7.TabIndex = 171;
+            this.txtRashod_K_base_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_7
@@ -827,6 +918,7 @@
             this.txtRashod_PG_base_DPmax_7.Name = "txtRashod_PG_base_DPmax_7";
             this.txtRashod_PG_base_DPmax_7.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_7.TabIndex = 170;
+            this.txtRashod_PG_base_DPmax_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_7
@@ -835,6 +927,7 @@
             this.txtRashod_PG_base_DPmin_7.Name = "txtRashod_PG_base_DPmin_7";
             this.txtRashod_PG_base_DPmin_7.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_7.TabIndex = 169;
+            this.txtRashod_PG_base_DPmin_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_7
@@ -843,6 +936,7 @@
             this.txtRashod_PG_base_DP_7.Name = "txtRashod_PG_base_DP_7";
             this.txtRashod_PG_base_DP_7.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_7.TabIndex = 168;
+            this.txtRashod_PG_base_DP_7.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_6
@@ -851,6 +945,7 @@
             this.txtIz_t_uvel_pg_DP_6.Name = "txtIz_t_uvel_pg_DP_6";
             this.txtIz_t_uvel_pg_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_6.TabIndex = 167;
+            this.txtIz_t_uvel_pg_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_6
@@ -859,6 +954,7 @@
             this.txtProiz_chug_uvel_K_DP_6.Name = "txtProiz_chug_uvel_K_DP_6";
             this.txtProiz_chug_uvel_K_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_6.TabIndex = 166;
+            this.txtProiz_chug_uvel_K_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_6
@@ -867,6 +963,7 @@
             this.txtProiz_chug_iz_PG_DP_6.Name = "txtProiz_chug_iz_PG_DP_6";
             this.txtProiz_chug_iz_PG_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_6.TabIndex = 165;
+            this.txtProiz_chug_iz_PG_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_6
@@ -875,6 +972,7 @@
             this.txtTeor_t_base_DPmax_6.Name = "txtTeor_t_base_DPmax_6";
             this.txtTeor_t_base_DPmax_6.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_6.TabIndex = 164;
+            this.txtTeor_t_base_DPmax_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_6
@@ -883,6 +981,7 @@
             this.txtTeor_t_base_DPmin_6.Name = "txtTeor_t_base_DPmin_6";
             this.txtTeor_t_base_DPmin_6.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_6.TabIndex = 163;
+            this.txtTeor_t_base_DPmin_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_6
@@ -891,6 +990,7 @@
             this.txtTeor_t_base_DP_6.Name = "txtTeor_t_base_DP_6";
             this.txtTeor_t_base_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_6.TabIndex = 162;
+            this.txtTeor_t_base_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_6
@@ -899,6 +999,7 @@
             this.txtProizvoditelnost_chug_base_DP_6.Name = "txtProizvoditelnost_chug_base_DP_6";
             this.txtProizvoditelnost_chug_base_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_6.TabIndex = 161;
+            this.txtProizvoditelnost_chug_base_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_6
@@ -907,6 +1008,7 @@
             this.txtRashod_K_base_DP_E_6.Name = "txtRashod_K_base_DP_E_6";
             this.txtRashod_K_base_DP_E_6.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_6.TabIndex = 160;
+            this.txtRashod_K_base_DP_E_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_6
@@ -915,6 +1017,7 @@
             this.txtRashod_K_base_DP_6.Name = "txtRashod_K_base_DP_6";
             this.txtRashod_K_base_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_6.TabIndex = 159;
+            this.txtRashod_K_base_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_6
@@ -923,6 +1026,7 @@
             this.txtRashod_PG_base_DPmax_6.Name = "txtRashod_PG_base_DPmax_6";
             this.txtRashod_PG_base_DPmax_6.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_6.TabIndex = 158;
+            this.txtRashod_PG_base_DPmax_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_6
@@ -931,6 +1035,7 @@
             this.txtRashod_PG_base_DPmin_6.Name = "txtRashod_PG_base_DPmin_6";
             this.txtRashod_PG_base_DPmin_6.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_6.TabIndex = 157;
+            this.txtRashod_PG_base_DPmin_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_6
@@ -939,6 +1044,7 @@
             this.txtRashod_PG_base_DP_6.Name = "txtRashod_PG_base_DP_6";
             this.txtRashod_PG_base_DP_6.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_6.TabIndex = 156;
+            this.txtRashod_PG_base_DP_6.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_5
@@ -947,6 +1053,7 @@
             this.txtIz_t_uvel_pg_DP_5.Name = "txtIz_t_uvel_pg_DP_5";
             this.txtIz_t_uvel_pg_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_5.TabIndex = 155;
+            this.txtIz_t_uvel_pg_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_5
@@ -955,6 +1062,7 @@
             this.txtProiz_chug_uvel_K_DP_5.Name = "txtProiz_chug_uvel_K_DP_5";
             this.txtProiz_chug_uvel_K_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_5.TabIndex = 154;
+            this.txtProiz_chug_uvel_K_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_5
@@ -963,6 +1071,7 @@
             this.txtProiz_chug_iz_PG_DP_5.Name = "txtProiz_chug_iz_PG_DP_5";
             this.txtProiz_chug_iz_PG_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_5.TabIndex = 153;
+            this.txtProiz_chug_iz_PG_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_5
@@ -971,6 +1080,7 @@
             this.txtTeor_t_base_DPmax_5.Name = "txtTeor_t_base_DPmax_5";
             this.txtTeor_t_base_DPmax_5.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_5.TabIndex = 152;
+            this.txtTeor_t_base_DPmax_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_5
@@ -979,6 +1089,7 @@
             this.txtTeor_t_base_DPmin_5.Name = "txtTeor_t_base_DPmin_5";
             this.txtTeor_t_base_DPmin_5.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_5.TabIndex = 151;
+            this.txtTeor_t_base_DPmin_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_5
@@ -987,6 +1098,7 @@
             this.txtTeor_t_base_DP_5.Name = "txtTeor_t_base_DP_5";
             this.txtTeor_t_base_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_5.TabIndex = 150;
+            this.txtTeor_t_base_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_5
@@ -995,6 +1107,7 @@
             this.txtProizvoditelnost_chug_base_DP_5.Name = "txtProizvoditelnost_chug_base_DP_5";
             this.txtProizvoditelnost_chug_base_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_5.TabIndex = 149;
+            this.txtProizvoditelnost_chug_base_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_5
@@ -1003,6 +1116,7 @@
             this.txtRashod_K_base_DP_E_5.Name = "txtRashod_K_base_DP_E_5";
             this.txtRashod_K_base_DP_E_5.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_5.TabIndex = 148;
+            this.txtRashod_K_base_DP_E_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_5
@@ -1011,6 +1125,7 @@
             this.txtRashod_K_base_DP_5.Name = "txtRashod_K_base_DP_5";
             this.txtRashod_K_base_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_5.TabIndex = 147;
+            this.txtRashod_K_base_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_5
@@ -1019,6 +1134,7 @@
             this.txtRashod_PG_base_DPmax_5.Name = "txtRashod_PG_base_DPmax_5";
             this.txtRashod_PG_base_DPmax_5.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_5.TabIndex = 146;
+            this.txtRashod_PG_base_DPmax_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_5
@@ -1027,6 +1143,7 @@
             this.txtRashod_PG_base_DPmin_5.Name = "txtRashod_PG_base_DPmin_5";
             this.txtRashod_PG_base_DPmin_5.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_5.TabIndex = 145;
+            this.txtRashod_PG_base_DPmin_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_5
@@ -1035,6 +1152,7 @@
             this.txtRashod_PG_base_DP_5.Name = "txtRashod_PG_base_DP_5";
             this.txtRashod_PG_base_DP_5.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_5.TabIndex = 144;
+            this.txtRashod_PG_base_DP_5.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_4
@@ -1043,6 +1161,7 @@
             this.txtIz_t_uvel_pg_DP_4.Name = "txtIz_t_uvel_pg_DP_4";
             this.txtIz_t_uvel_pg_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_4.TabIndex = 143;
+            this.txtIz_t_uvel_pg_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_4
@@ -1051,6 +1170,7 @@
             this.txtProiz_chug_uvel_K_DP_4.Name = "txtProiz_chug_uvel_K_DP_4";
             this.txtProiz_chug_uvel_K_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_4.TabIndex = 142;
+            this.txtProiz_chug_uvel_K_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_4
@@ -1059,6 +1179,7 @@
             this.txtProiz_chug_iz_PG_DP_4.Name = "txtProiz_chug_iz_PG_DP_4";
             this.txtProiz_chug_iz_PG_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_4.TabIndex = 141;
+            this.txtProiz_chug_iz_PG_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_4
@@ -1067,6 +1188,7 @@
             this.txtTeor_t_base_DPmax_4.Name = "txtTeor_t_base_DPmax_4";
             this.txtTeor_t_base_DPmax_4.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_4.TabIndex = 140;
+            this.txtTeor_t_base_DPmax_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_4
@@ -1075,6 +1197,7 @@
             this.txtTeor_t_base_DPmin_4.Name = "txtTeor_t_base_DPmin_4";
             this.txtTeor_t_base_DPmin_4.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_4.TabIndex = 139;
+            this.txtTeor_t_base_DPmin_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_4
@@ -1083,6 +1206,7 @@
             this.txtTeor_t_base_DP_4.Name = "txtTeor_t_base_DP_4";
             this.txtTeor_t_base_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_4.TabIndex = 138;
+            this.txtTeor_t_base_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_4
@@ -1091,6 +1215,7 @@
             this.txtProizvoditelnost_chug_base_DP_4.Name = "txtProizvoditelnost_chug_base_DP_4";
             this.txtProizvoditelnost_chug_base_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_4.TabIndex = 137;
+            this.txtProizvoditelnost_chug_base_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_4
@@ -1099,6 +1224,7 @@
             this.txtRashod_K_base_DP_E_4.Name = "txtRashod_K_base_DP_E_4";
             this.txtRashod_K_base_DP_E_4.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_4.TabIndex = 136;
+            this.txtRashod_K_base_DP_E_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_4
@@ -1107,6 +1233,7 @@
             this.txtRashod_K_base_DP_4.Name = "txtRashod_K_base_DP_4";
             this.txtRashod_K_base_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_4.TabIndex = 135;
+            this.txtRashod_K_base_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_4
@@ -1115,6 +1242,7 @@
             this.txtRashod_PG_base_DPmax_4.Name = "txtRashod_PG_base_DPmax_4";
             this.txtRashod_PG_base_DPmax_4.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_4.TabIndex = 134;
+            this.txtRashod_PG_base_DPmax_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_4
@@ -1123,6 +1251,7 @@
             this.txtRashod_PG_base_DPmin_4.Name = "txtRashod_PG_base_DPmin_4";
             this.txtRashod_PG_base_DPmin_4.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_4.TabIndex = 133;
+            this.txtRashod_PG_base_DPmin_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_4
@@ -1131,6 +1260,7 @@
             this.txtRashod_PG_base_DP_4.Name = "txtRashod_PG_base_DP_4";
             this.txtRashod_PG_base_DP_4.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_4.TabIndex = 132;
+            this.txtRashod_PG_base_DP_4.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_3
@@ -1139,6 +1269,7 @@
             this.txtIz_t_uvel_pg_DP_3.Name = "txtIz_t_uvel_pg_DP_3";
             this.txtIz_t_uvel_pg_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_3.TabIndex = 131;
+            this.txtIz_t_uvel_pg_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_3
@@ -1147,6 +1278,7 @@
             this.txtProiz_chug_uvel_K_DP_3.Name = "txtProiz_chug_uvel_K_DP_3";
             this.txtProiz_chug_uvel_K_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_3.TabIndex = 130;
+            this.txtProiz_chug_uvel_K_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_3
@@ -1155,6 +1287,7 @@
             this.txtProiz_chug_iz_PG_DP_3.Name = "txtProiz_chug_iz_PG_DP_3";
             this.txtProiz_chug_iz_PG_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_3.TabIndex = 129;
+            this.txtProiz_chug_iz_PG_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_3
@@ -1163,6 +1296,7 @@
             this.txtTeor_t_base_DPmax_3.Name = "txtTeor_t_base_DPmax_3";
             this.txtTeor_t_base_DPmax_3.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_3.TabIndex = 128;
+            this.txtTeor_t_base_DPmax_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_3
@@ -1171,6 +1305,7 @@
             this.txtTeor_t_base_DPmin_3.Name = "txtTeor_t_base_DPmin_3";
             this.txtTeor_t_base_DPmin_3.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_3.TabIndex = 127;
+            this.txtTeor_t_base_DPmin_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_3
@@ -1179,6 +1314,7 @@
             this.txtTeor_t_base_DP_3.Name = "txtTeor_t_base_DP_3";
             this.txtTeor_t_base_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_3.TabIndex = 126;
+            this.txtTeor_t_base_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_3
@@ -1187,6 +1323,7 @@
             this.txtProizvoditelnost_chug_base_DP_3.Name = "txtProizvoditelnost_chug_base_DP_3";
             this.txtProizvoditelnost_chug_base_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_3.TabIndex = 125;
+            this.txtProizvoditelnost_chug_base_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_3
@@ -1195,6 +1332,7 @@
             this.txtRashod_K_base_DP_E_3.Name = "txtRashod_K_base_DP_E_3";
             this.txtRashod_K_base_DP_E_3.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_3.TabIndex = 124;
+            this.txtRashod_K_base_DP_E_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_3
@@ -1203,6 +1341,7 @@
             this.txtRashod_K_base_DP_3.Name = "txtRashod_K_base_DP_3";
             this.txtRashod_K_base_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_3.TabIndex = 123;
+            this.txtRashod_K_base_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_3
@@ -1211,6 +1350,7 @@
             this.txtRashod_PG_base_DPmax_3.Name = "txtRashod_PG_base_DPmax_3";
             this.txtRashod_PG_base_DPmax_3.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_3.TabIndex = 122;
+            this.txtRashod_PG_base_DPmax_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_3
@@ -1219,6 +1359,7 @@
             this.txtRashod_PG_base_DPmin_3.Name = "txtRashod_PG_base_DPmin_3";
             this.txtRashod_PG_base_DPmin_3.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_3.TabIndex = 121;
+            this.txtRashod_PG_base_DPmin_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_3
@@ -1227,6 +1368,7 @@
             this.txtRashod_PG_base_DP_3.Name = "txtRashod_PG_base_DP_3";
             this.txtRashod_PG_base_DP_3.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_3.TabIndex = 120;
+            this.txtRashod_PG_base_DP_3.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_2
@@ -1235,6 +1377,7 @@
             this.txtIz_t_uvel_pg_DP_2.Name = "txtIz_t_uvel_pg_DP_2";
             this.txtIz_t_uvel_pg_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_2.TabIndex = 119;
+            this.txtIz_t_uvel_pg_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_2
@@ -1243,6 +1386,7 @@
             this.txtProiz_chug_uvel_K_DP_2.Name = "txtProiz_chug_uvel_K_DP_2";
             this.txtProiz_chug_uvel_K_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_2.TabIndex = 118;
+            this.txtProiz_chug_uvel_K_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_2
@@ -1251,6 +1395,7 @@
             this.txtProiz_chug_iz_PG_DP_2.Name = "txtProiz_chug_iz_PG_DP_2";
             this.txtProiz_chug_iz_PG_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_2.TabIndex = 117;
+            this.txtProiz_chug_iz_PG_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_2
@@ -1259,6 +1404,7 @@
             this.txtTeor_t_base_DPmax_2.Name = "txtTeor_t_base_DPmax_2";
             this.txtTeor_t_base_DPmax_2.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_2.TabIndex = 116;
+            this.txtTeor_t_base_DPmax_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_2
@@ -1267,6 +1413,7 @@
             this.txtTeor_t_base_DPmin_2.Name = "txtTeor_t_base_DPmin_2";
             this.txtTeor_t_base_DPmin_2.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_2.TabIndex = 115;
+            this.txtTeor_t_base_DPmin_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_2
@@ -1275,6 +1422,7 @@
             this.txtTeor_t_base_DP_2.Name = "txtTeor_t_base_DP_2";
             this.txtTeor_t_base_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_2.TabIndex = 114;
+            this.txtTeor_t_base_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_2
@@ -1283,6 +1431,7 @@
             this.txtProizvoditelnost_chug_base_DP_2.Name = "txtProizvoditelnost_chug_base_DP_2";
             this.txtProizvoditelnost_chug_base_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_2.TabIndex = 113;
+            this.txtProizvoditelnost_chug_base_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_2
@@ -1291,6 +1440,7 @@
             this.txtRashod_K_base_DP_E_2.Name = "txtRashod_K_base_DP_E_2";
             this.txtRashod_K_base_DP_E_2.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_2.TabIndex = 112;
+            this.txtRashod_K_base_DP_E_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_2
@@ -1299,6 +1449,7 @@
             this.txtRashod_K_base_DP_2.Name = "txtRashod_K_base_DP_2";
             this.txtRashod_K_base_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_2.TabIndex = 111;
+            this.txtRashod_K_base_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_2
@@ -1307,6 +1458,7 @@
             this.txtRashod_PG_base_DPmax_2.Name = "txtRashod_PG_base_DPmax_2";
             this.txtRashod_PG_base_DPmax_2.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_2.TabIndex = 110;
+            this.txtRashod_PG_base_DPmax_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_2
@@ -1315,6 +1467,7 @@
             this.txtRashod_PG_base_DPmin_2.Name = "txtRashod_PG_base_DPmin_2";
             this.txtRashod_PG_base_DPmin_2.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_2.TabIndex = 109;
+            this.txtRashod_PG_base_DPmin_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_2
@@ -1323,6 +1476,7 @@
             this.txtRashod_PG_base_DP_2.Name = "txtRashod_PG_base_DP_2";
             this.txtRashod_PG_base_DP_2.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_2.TabIndex = 108;
+            this.txtRashod_PG_base_DP_2.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtIz_t_uvel_pg_DP_1
@@ -1331,6 +1485,7 @@
             this.txtIz_t_uvel_pg_DP_1.Name = "txtIz_t_uvel_pg_DP_1";
             this.txtIz_t_uvel_pg_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtIz_t_uvel_pg_DP_1.TabIndex = 107;
+            this.txtIz_t_uvel_pg_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtIz_t_uvel_pg_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_uvel_K_DP_1
@@ -1339,6 +1494,7 @@
             this.txtProiz_chug_uvel_K_DP_1.Name = "txtProiz_chug_uvel_K_DP_1";
             this.txtProiz_chug_uvel_K_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_uvel_K_DP_1.TabIndex = 106;
+            this.txtProiz_chug_uvel_K_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_uvel_K_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtProiz_chug_iz_PG_DP_1
@@ -1347,6 +1503,7 @@
             this.txtProiz_chug_iz_PG_DP_1.Name = "txtProiz_chug_iz_PG_DP_1";
             this.txtProiz_chug_iz_PG_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtProiz_chug_iz_PG_DP_1.TabIndex = 105;
+            this.txtProiz_chug_iz_PG_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProiz_chug_iz_PG_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limIZ_KeyPress);
             // 
             // txtTeor_t_base_DPmax_1
@@ -1355,6 +1512,7 @@
             this.txtTeor_t_base_DPmax_1.Name = "txtTeor_t_base_DPmax_1";
             this.txtTeor_t_base_DPmax_1.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmax_1.TabIndex = 104;
+            this.txtTeor_t_base_DPmax_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmax_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DPmin_1
@@ -1363,6 +1521,7 @@
             this.txtTeor_t_base_DPmin_1.Name = "txtTeor_t_base_DPmin_1";
             this.txtTeor_t_base_DPmin_1.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DPmin_1.TabIndex = 103;
+            this.txtTeor_t_base_DPmin_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DPmin_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTeor_t_base_DP_1
@@ -1371,6 +1530,7 @@
             this.txtTeor_t_base_DP_1.Name = "txtTeor_t_base_DP_1";
             this.txtTeor_t_base_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtTeor_t_base_DP_1.TabIndex = 102;
+            this.txtTeor_t_base_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTeor_t_base_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtProizvoditelnost_chug_base_DP_1
@@ -1379,6 +1539,7 @@
             this.txtProizvoditelnost_chug_base_DP_1.Name = "txtProizvoditelnost_chug_base_DP_1";
             this.txtProizvoditelnost_chug_base_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtProizvoditelnost_chug_base_DP_1.TabIndex = 101;
+            this.txtProizvoditelnost_chug_base_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtProizvoditelnost_chug_base_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_E_1
@@ -1387,6 +1548,7 @@
             this.txtRashod_K_base_DP_E_1.Name = "txtRashod_K_base_DP_E_1";
             this.txtRashod_K_base_DP_E_1.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_E_1.TabIndex = 100;
+            this.txtRashod_K_base_DP_E_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_E_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_K_base_DP_1
@@ -1395,6 +1557,7 @@
             this.txtRashod_K_base_DP_1.Name = "txtRashod_K_base_DP_1";
             this.txtRashod_K_base_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_K_base_DP_1.TabIndex = 99;
+            this.txtRashod_K_base_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_K_base_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmax_1
@@ -1403,6 +1566,7 @@
             this.txtRashod_PG_base_DPmax_1.Name = "txtRashod_PG_base_DPmax_1";
             this.txtRashod_PG_base_DPmax_1.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmax_1.TabIndex = 98;
+            this.txtRashod_PG_base_DPmax_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmax_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DPmin_1
@@ -1411,6 +1575,7 @@
             this.txtRashod_PG_base_DPmin_1.Name = "txtRashod_PG_base_DPmin_1";
             this.txtRashod_PG_base_DPmin_1.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DPmin_1.TabIndex = 97;
+            this.txtRashod_PG_base_DPmin_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DPmin_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRashod_PG_base_DP_1
@@ -1419,6 +1584,7 @@
             this.txtRashod_PG_base_DP_1.Name = "txtRashod_PG_base_DP_1";
             this.txtRashod_PG_base_DP_1.Size = new System.Drawing.Size(52, 20);
             this.txtRashod_PG_base_DP_1.TabIndex = 96;
+            this.txtRashod_PG_base_DP_1.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRashod_PG_base_DP_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // GB
@@ -1491,6 +1657,7 @@
             this.txtStoimoct_k.Name = "txtStoimoct_k";
             this.txtStoimoct_k.Size = new System.Drawing.Size(52, 20);
             this.txtStoimoct_k.TabIndex = 1;
+            this.txtStoimoct_k.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtStoimoct_k.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtTreb_proiz_chug
@@ -1499,6 +1666,7 @@
             this.txtTreb_proiz_chug.Name = "txtTreb_proiz_chug";
             this.txtTreb_proiz_chug.Size = new System.Drawing.Size(52, 20);
             this.txtTreb_proiz_chug.TabIndex = 5;
+            this.txtTreb_proiz_chug.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtTreb_proiz_chug.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtStoimoct_pg
@@ -1507,6 +1675,7 @@
             this.txtStoimoct_pg.Name = "txtStoimoct_pg";
             this.txtStoimoct_pg.Size = new System.Drawing.Size(52, 20);
             this.txtStoimoct_pg.TabIndex = 2;
+            this.txtStoimoct_pg.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtStoimoct_pg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtZapas_k
@@ -1515,6 +1684,7 @@
             this.txtZapas_k.Name = "txtZapas_k";
             this.txtZapas_k.Size = new System.Drawing.Size(52, 20);
             this.txtZapas_k.TabIndex = 4;
+            this.txtZapas_k.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtZapas_k.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // txtRezerf_rashod_pg
@@ -1523,6 +1693,7 @@
             this.txtRezerf_rashod_pg.Name = "txtRezerf_rashod_pg";
             this.txtRezerf_rashod_pg.Size = new System.Drawing.Size(52, 20);
             this.txtRezerf_rashod_pg.TabIndex = 3;
+            this.txtRezerf_rashod_pg.TextChanged += new System.EventHandler(this.Clear_TextChanged);
             this.txtRezerf_rashod_pg.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.lim_KeyPress);
             // 
             // btnCalc
@@ -1548,96 +1719,24 @@
             // 
             // chart1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(3, 6);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Расход природного газа в базовом периоде, м3/ч";
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Расход природного газа после перераспределения, м3/ч";
-            this.chart1.Series.Add(series11);
-            this.chart1.Series.Add(series12);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Расход природного газа в базовом периоде, м3/ч";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Расход природного газа после перераспределения, м3/ч";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(771, 474);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            // 
-            // txtDP2
-            // 
-            this.txtDP2.Enabled = false;
-            this.txtDP2.Location = new System.Drawing.Point(509, 30);
-            this.txtDP2.Name = "txtDP2";
-            this.txtDP2.Size = new System.Drawing.Size(52, 20);
-            this.txtDP2.TabIndex = 108;
-            // 
-            // txtDP3
-            // 
-            this.txtDP3.Enabled = false;
-            this.txtDP3.Location = new System.Drawing.Point(567, 30);
-            this.txtDP3.Name = "txtDP3";
-            this.txtDP3.Size = new System.Drawing.Size(52, 20);
-            this.txtDP3.TabIndex = 109;
-            // 
-            // txtDP4
-            // 
-            this.txtDP4.Enabled = false;
-            this.txtDP4.Location = new System.Drawing.Point(625, 30);
-            this.txtDP4.Name = "txtDP4";
-            this.txtDP4.Size = new System.Drawing.Size(52, 20);
-            this.txtDP4.TabIndex = 110;
-            // 
-            // txtDP5
-            // 
-            this.txtDP5.Enabled = false;
-            this.txtDP5.Location = new System.Drawing.Point(683, 30);
-            this.txtDP5.Name = "txtDP5";
-            this.txtDP5.Size = new System.Drawing.Size(52, 20);
-            this.txtDP5.TabIndex = 111;
-            // 
-            // txtDP6
-            // 
-            this.txtDP6.Enabled = false;
-            this.txtDP6.Location = new System.Drawing.Point(741, 30);
-            this.txtDP6.Name = "txtDP6";
-            this.txtDP6.Size = new System.Drawing.Size(52, 20);
-            this.txtDP6.TabIndex = 112;
-            // 
-            // txtDP7
-            // 
-            this.txtDP7.Enabled = false;
-            this.txtDP7.Location = new System.Drawing.Point(799, 30);
-            this.txtDP7.Name = "txtDP7";
-            this.txtDP7.Size = new System.Drawing.Size(52, 20);
-            this.txtDP7.TabIndex = 113;
-            // 
-            // txtDP8
-            // 
-            this.txtDP8.Enabled = false;
-            this.txtDP8.Location = new System.Drawing.Point(857, 30);
-            this.txtDP8.Name = "txtDP8";
-            this.txtDP8.Size = new System.Drawing.Size(52, 20);
-            this.txtDP8.TabIndex = 114;
-            // 
-            // txtZ
-            // 
-            this.txtZ.Enabled = false;
-            this.txtZ.Location = new System.Drawing.Point(449, 12);
-            this.txtZ.Name = "txtZ";
-            this.txtZ.Size = new System.Drawing.Size(52, 20);
-            this.txtZ.TabIndex = 222;
-            // 
-            // txtDP1
-            // 
-            this.txtDP1.Enabled = false;
-            this.txtDP1.Location = new System.Drawing.Point(451, 30);
-            this.txtDP1.Name = "txtDP1";
-            this.txtDP1.Size = new System.Drawing.Size(52, 20);
-            this.txtDP1.TabIndex = 107;
             // 
             // frMain
             // 

@@ -1030,5 +1030,22 @@ namespace RAS_PR_GAZ
         {
 
         }
-    }
-}
+        private void Clear_TextChanged(object sender, EventArgs e)
+        {
+            tPGraph.Parent = null;
+            txtDP1.Text = "";
+            txtDP2.Text = "";
+            txtDP3.Text = "";
+            txtDP4.Text = "";
+            txtDP5.Text = "";
+            txtDP6.Text = "";
+            txtDP7.Text = "";
+            txtDP8.Text = "";
+            txtZ.Text = "";
+        }   
+    }       
+}           
+            
+            
+            
+            
