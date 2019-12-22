@@ -1734,7 +1734,7 @@
             series2.Name = "Расход природного газа после перераспределения, м3/ч";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(771, 474);
+            this.chart1.Size = new System.Drawing.Size(921, 515);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -1746,7 +1746,6 @@
             this.Controls.Add(this.tab);
             this.Name = "frMain";
             this.Text = "Распределение природного газа в группе доменных печей";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frMain_FormClosing);
             this.Load += new System.EventHandler(this.frMain_Load);
             this.tab.ResumeLayout(false);
             this.tPData.ResumeLayout(false);

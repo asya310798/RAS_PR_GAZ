@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAS_PR_GAZ", "RAS_PR_GAZ\RAS_PR_GAZ.csproj", "{69BEC048-E182-4C4A-B70F-075279EF680A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SETUP_RAS_PR_GAZ", "SETUP_RAS_PR_GAZ\SETUP_RAS_PR_GAZ.vdproj", "{659EA016-7B7C-4308-B7A7-F2663145CB1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{69BEC048-E182-4C4A-B70F-075279EF680A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69BEC048-E182-4C4A-B70F-075279EF680A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69BEC048-E182-4C4A-B70F-075279EF680A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659EA016-7B7C-4308-B7A7-F2663145CB1B}.Debug|Any CPU.ActiveCfg = Debug
+		{659EA016-7B7C-4308-B7A7-F2663145CB1B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

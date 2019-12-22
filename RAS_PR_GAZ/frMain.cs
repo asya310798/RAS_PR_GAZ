@@ -833,31 +833,10 @@ namespace RAS_PR_GAZ
             Parameter KoefNerav22 = new Parameter(Domain.Real, "KoefNerav22", users);
             Parameter KoefNerav3 = new Parameter(Domain.Real, "KoefNerav3", users);
             Parameter KoefNerav33 = new Parameter(Domain.Real, "KoefNerav33", users);
-
-
-            Parameter Rashod_PG_base_DP = new Parameter(Domain.Real, "Rashod_PG_base_DP", users);
             Parameter Rashod_PG_base_DPmin = new Parameter(Domain.Real, "Rashod_PG_base_DPmin", users);
             Parameter Rashod_PG_base_DPmax = new Parameter(Domain.Real, "Rashod_PG_base_DPmax", users);
-            Parameter Rashod_K_base_DP = new Parameter(Domain.Real, "Rashod_K_base_DP", users);
-            Parameter Rashod_K_base_DP_E = new Parameter(Domain.Real, "Rashod_K_base_DP_E", users);
-            Parameter Proizvoditelnost_chug_base_DP = new Parameter(Domain.Real, "Proizvoditelnost_chug_base_DP", users);
-            Parameter Teor_t_base_DP = new Parameter(Domain.Real, "Teor_t_base_DP_1", users);
-            Parameter Teor_t_base_DPmin = new Parameter(Domain.Real, "Teor_t_base_DPmin", users);
-            Parameter Teor_t_base_DPmax = new Parameter(Domain.Real, "Teor_t_base_DPmax", users);
 
 
-            Parameter Proiz_chug_iz_PG_DP = new Parameter(Domain.Real, "Proiz_chug_iz_PG_DP", users);
-            Parameter Proiz_chug_uvel_K_DP = new Parameter(Domain.Real, "Proiz_chug_uvel_K_DP", users);
-            Parameter Iz_t_uvel_pg_DP = new Parameter(Domain.Real, "Iz_t_uvel_pg_DP", users);
-
-
-            Parameter Stoimoct_k = new Parameter(Domain.Real, "Stoimoct_k", users);
-            Parameter Stoimoct_pg = new Parameter(Domain.Real, "Stoimoct_pg", users);
-            Parameter Rezerf_rashod_pg = new Parameter(Domain.Real, "Rezerf_rashod_pg", users);
-            Parameter Zapas_k = new Parameter(Domain.Real, "Zapas_k", users);
-            Parameter Treb_proiz_chug = new Parameter(Domain.Real, "Treb_proiz_chug", users);
-
-            
             Koef.SetBinding(modelDPs, "Koef", "xId");
             KoefNerav1.SetBinding(modelDPs, "KoefNerav1", "xId");
             KoefNerav11.SetBinding(modelDPs, "KoefNerav11", "xId");
@@ -865,32 +844,11 @@ namespace RAS_PR_GAZ
             KoefNerav22.SetBinding(modelDPs, "KoefNerav22", "xId");
             KoefNerav3.SetBinding(modelDPs, "KoefNerav3", "xId");
             KoefNerav33.SetBinding(modelDPs, "KoefNerav33", "xId");
-
-            Rashod_PG_base_DP.SetBinding(modelDPs, "Rashod_PG_base_DP", "xId");
             Rashod_PG_base_DPmin.SetBinding(modelDPs, "Rashod_PG_base_DPmin", "xId");
             Rashod_PG_base_DPmax.SetBinding(modelDPs, "Rashod_PG_base_DPmax", "xId");
-            Rashod_K_base_DP.SetBinding(modelDPs, "Rashod_K_base_DP", "xId");
-            Rashod_K_base_DP_E.SetBinding(modelDPs, "Rashod_K_base_DP_E", "xId");
-            Proizvoditelnost_chug_base_DP.SetBinding(modelDPs, "Proizvoditelnost_chug_base_DP", "xId");
-            Teor_t_base_DP.SetBinding(modelDPs, "Teor_t_base_DP", "xId");
-            Teor_t_base_DPmin.SetBinding(modelDPs, "Teor_t_base_DPmin", "xId");
-            Teor_t_base_DPmax.SetBinding(modelDPs, "Teor_t_base_DPmax", "xId");
-
-
-            Proiz_chug_iz_PG_DP.SetBinding(modelDPs, "Proiz_chug_iz_PG_DP", "xId");
-            Proiz_chug_uvel_K_DP.SetBinding(modelDPs, "Proiz_chug_uvel_K_DP", "xId");
-            Iz_t_uvel_pg_DP.SetBinding(modelDPs, "Iz_t_uvel_pg_DP", "xId");
-
-
-            Stoimoct_k.SetBinding(modelDPs, "Stoimoct_k", "xId");
-            Stoimoct_pg.SetBinding(modelDPs, "Stoimoct_pg", "xId");
-            Rezerf_rashod_pg.SetBinding(modelDPs, "Rezerf_rashod_pg", "xId");
-            Zapas_k.SetBinding(modelDPs, "Zapas_k", "xId");
-            Treb_proiz_chug.SetBinding(modelDPs, "Treb_proiz_chug", "xId");
 
             
             model.AddParameters(
-
                 Koef,
                 KoefNerav1,
                 KoefNerav11,
@@ -899,28 +857,9 @@ namespace RAS_PR_GAZ
                 KoefNerav3,
                 KoefNerav33,
 
-
-                Rashod_PG_base_DP,
                 Rashod_PG_base_DPmin,
-                Rashod_PG_base_DPmax,
-                Rashod_K_base_DP,
-                Rashod_K_base_DP_E,
-                Proizvoditelnost_chug_base_DP,
-                Teor_t_base_DP,
-                Teor_t_base_DPmin,
-                Teor_t_base_DPmax,
-
-
-                Proiz_chug_iz_PG_DP,
-                Proiz_chug_uvel_K_DP,
-                Iz_t_uvel_pg_DP,
-
-
-                Stoimoct_k,
-                Stoimoct_pg,
-                Rezerf_rashod_pg,
-                Zapas_k,
-                Treb_proiz_chug);
+                Rashod_PG_base_DPmax
+                );
 
 
             Decision choose = new Decision(Domain.RealNonnegative, "choose", users);
@@ -1025,11 +964,7 @@ namespace RAS_PR_GAZ
         {
             e.Handled = !System.Text.RegularExpressions.Regex.IsMatch(e.KeyChar.ToString(), @"[0,1,2,3,4,5,6,7,8,9,--,\b]");
         }
-
-        private void frMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
+        
         private void Clear_TextChanged(object sender, EventArgs e)
         {
             tPGraph.Parent = null;
