@@ -569,29 +569,12 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_1 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001*_mdp.Rashod_K_base_DP_E_1),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_1 +0.001 * _mdp.Rashod_PG_base_DP_1 * _mdp.Rashod_K_base_DP_E_1),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_1-_mdp.Rashod_K_base_DP_E_1*_mdp.Proiz_chug_uvel_K_DP_1,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_1*_mdp.Proiz_chug_iz_PG_DP_1+_mdp.Rashod_K_base_DP_E_1*_mdp.Rashod_PG_base_DP_1*_mdp.Proiz_chug_uvel_K_DP_1+_mdp.Proizvoditelnost_chug_base_DP_1,
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_1+_mdp.Rashod_PG_base_DP_1 * _mdp.Iz_t_uvel_pg_DP_1-_mdp.Teor_t_base_DP_1)/_mdp.Iz_t_uvel_pg_DP_1,
-                KoefNerav33 = (_mdp.Teor_t_base_DPmax_1 + _mdp.Rashod_PG_base_DP_1 * _mdp.Iz_t_uvel_pg_DP_1 - _mdp.Teor_t_base_DP_1) / _mdp.Iz_t_uvel_pg_DP_1,
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_1,
+                KoefNerav33 = (_mdp.Teor_t_base_DPmax_1 + _mdp.Rashod_PG_base_DP_1 * _mdp.Iz_t_uvel_pg_DP_1 - _mdp.Teor_t_base_DP_1) / _mdp.Iz_t_uvel_pg_DP_1,               
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_1,
                 Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_1,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_1,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_1,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_1,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_1,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_1,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_1,
-
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_1,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_1,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_1,
-                
-
-
             });
             //Для ДП2
             modelDPs.Add(new ModelDP
@@ -600,29 +583,12 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_2 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_2),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_2 + 0.001 * _mdp.Rashod_PG_base_DP_2 * _mdp.Rashod_K_base_DP_E_2),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_2 - _mdp.Rashod_K_base_DP_E_2 * _mdp.Proiz_chug_uvel_K_DP_2,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_2 * _mdp.Proiz_chug_iz_PG_DP_2 + _mdp.Rashod_K_base_DP_E_2 * _mdp.Rashod_PG_base_DP_2 * _mdp.Proiz_chug_uvel_K_DP_2 + _mdp.Proizvoditelnost_chug_base_DP_2,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_2 + _mdp.Rashod_PG_base_DP_2 * _mdp.Iz_t_uvel_pg_DP_2 - _mdp.Teor_t_base_DP_2) / _mdp.Iz_t_uvel_pg_DP_2,
-                KoefNerav33 = (_mdp.Teor_t_base_DPmax_2 + _mdp.Rashod_PG_base_DP_2 * _mdp.Iz_t_uvel_pg_DP_2 - _mdp.Teor_t_base_DP_2) / _mdp.Iz_t_uvel_pg_DP_2,
-
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_2,
+                KoefNerav33 = (_mdp.Teor_t_base_DPmax_2 + _mdp.Rashod_PG_base_DP_2 * _mdp.Iz_t_uvel_pg_DP_2 - _mdp.Teor_t_base_DP_2) / _mdp.Iz_t_uvel_pg_DP_2,           
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_2,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_2,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_2,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_2,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_2,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_2,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_2,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_2,
-
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_2,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_2,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_2,
-                
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_2
             });
 
             //Для ДП3
@@ -632,28 +598,12 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_3 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_3),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_3 + 0.001 * _mdp.Rashod_PG_base_DP_3 * _mdp.Rashod_K_base_DP_E_3),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_3 - _mdp.Rashod_K_base_DP_E_3 * _mdp.Proiz_chug_uvel_K_DP_3,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_3 * _mdp.Proiz_chug_iz_PG_DP_3 + _mdp.Rashod_K_base_DP_E_3 * _mdp.Rashod_PG_base_DP_3 * _mdp.Proiz_chug_uvel_K_DP_3 + _mdp.Proizvoditelnost_chug_base_DP_3,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_3 + _mdp.Rashod_PG_base_DP_3 * _mdp.Iz_t_uvel_pg_DP_3 - _mdp.Teor_t_base_DP_3) / _mdp.Iz_t_uvel_pg_DP_3,
-                KoefNerav33 = (_mdp.Teor_t_base_DPmax_3 + _mdp.Rashod_PG_base_DP_3 * _mdp.Iz_t_uvel_pg_DP_3 - _mdp.Teor_t_base_DP_3) / _mdp.Iz_t_uvel_pg_DP_3,
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_3,
+                KoefNerav33 = (_mdp.Teor_t_base_DPmax_3 + _mdp.Rashod_PG_base_DP_3 * _mdp.Iz_t_uvel_pg_DP_3 - _mdp.Teor_t_base_DP_3) / _mdp.Iz_t_uvel_pg_DP_3,           
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_3,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_3,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_3,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_3,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_3,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_3,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_3,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_3,
-
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_3,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_3,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_3,
-                
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_3
             });
 
             //Для ДП4
@@ -663,29 +613,12 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_4 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_4),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_4 + 0.001 * _mdp.Rashod_PG_base_DP_4 * _mdp.Rashod_K_base_DP_E_4),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_4 - _mdp.Rashod_K_base_DP_E_4 * _mdp.Proiz_chug_uvel_K_DP_4,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_4 * _mdp.Proiz_chug_iz_PG_DP_4 + _mdp.Rashod_K_base_DP_E_4 * _mdp.Rashod_PG_base_DP_4 * _mdp.Proiz_chug_uvel_K_DP_4 + _mdp.Proizvoditelnost_chug_base_DP_4,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_4 + _mdp.Rashod_PG_base_DP_4 * _mdp.Iz_t_uvel_pg_DP_4 - _mdp.Teor_t_base_DP_4) / _mdp.Iz_t_uvel_pg_DP_4,
-                KoefNerav33 = (_mdp.Teor_t_base_DPmax_4 + _mdp.Rashod_PG_base_DP_4 * _mdp.Iz_t_uvel_pg_DP_4 - _mdp.Teor_t_base_DP_4) / _mdp.Iz_t_uvel_pg_DP_4,
-
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_4,
+                KoefNerav33 = (_mdp.Teor_t_base_DPmax_4 + _mdp.Rashod_PG_base_DP_4 * _mdp.Iz_t_uvel_pg_DP_4 - _mdp.Teor_t_base_DP_4) / _mdp.Iz_t_uvel_pg_DP_4,               
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_4,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_4,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_4,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_4,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_4,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_4,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_4,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_4,
-
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_4,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_4,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_4,
-                
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_4
             });
 
             //Для ДП5
@@ -695,29 +628,12 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_5 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_5),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_5 + 0.001 * _mdp.Rashod_PG_base_DP_5 * _mdp.Rashod_K_base_DP_E_5),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_5 - _mdp.Rashod_K_base_DP_E_5 * _mdp.Proiz_chug_uvel_K_DP_5,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_5 * _mdp.Proiz_chug_iz_PG_DP_5 + _mdp.Rashod_K_base_DP_E_5 * _mdp.Rashod_PG_base_DP_5 * _mdp.Proiz_chug_uvel_K_DP_5 + _mdp.Proizvoditelnost_chug_base_DP_5,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_5 + _mdp.Rashod_PG_base_DP_5 * _mdp.Iz_t_uvel_pg_DP_5 - _mdp.Teor_t_base_DP_5) / _mdp.Iz_t_uvel_pg_DP_5,
-                KoefNerav33 = (_mdp.Teor_t_base_DPmax_5 + _mdp.Rashod_PG_base_DP_5 * _mdp.Iz_t_uvel_pg_DP_5 - _mdp.Teor_t_base_DP_5) / _mdp.Iz_t_uvel_pg_DP_5,
-
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_5,
+                KoefNerav33 = (_mdp.Teor_t_base_DPmax_5 + _mdp.Rashod_PG_base_DP_5 * _mdp.Iz_t_uvel_pg_DP_5 - _mdp.Teor_t_base_DP_5) / _mdp.Iz_t_uvel_pg_DP_5,             
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_5,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_5,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_5,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_5,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_5,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_5,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_5,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_5,
-
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_5,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_5,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_5,
-                
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_5
             });
 
             //Для ДП6
@@ -727,29 +643,13 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_6 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_6),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_6 + 0.001 * _mdp.Rashod_PG_base_DP_6 * _mdp.Rashod_K_base_DP_E_6),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_6 - _mdp.Rashod_K_base_DP_E_6 * _mdp.Proiz_chug_uvel_K_DP_6,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_6 * _mdp.Proiz_chug_iz_PG_DP_6 + _mdp.Rashod_K_base_DP_E_6 * _mdp.Rashod_PG_base_DP_6 * _mdp.Proiz_chug_uvel_K_DP_6 + _mdp.Proizvoditelnost_chug_base_DP_6,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_6 + _mdp.Rashod_PG_base_DP_6 * _mdp.Iz_t_uvel_pg_DP_6 - _mdp.Teor_t_base_DP_6) / _mdp.Iz_t_uvel_pg_DP_6,
-                KoefNerav33 = (_mdp.Teor_t_base_DPmax_6 + _mdp.Rashod_PG_base_DP_6 * _mdp.Iz_t_uvel_pg_DP_6 - _mdp.Teor_t_base_DP_6) / _mdp.Iz_t_uvel_pg_DP_6,
-
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_6,
+                KoefNerav33 = (_mdp.Teor_t_base_DPmax_6 + _mdp.Rashod_PG_base_DP_6 * _mdp.Iz_t_uvel_pg_DP_6 - _mdp.Teor_t_base_DP_6) / _mdp.Iz_t_uvel_pg_DP_6,                
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_6,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_6,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_6,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_6,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_6,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_6,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_6,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_6,
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_6
 
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_6,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_6,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_6,
-                
             });
 
             //Для ДП7
@@ -759,29 +659,13 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_7 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_7),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_7 + 0.001 * _mdp.Rashod_PG_base_DP_7 * _mdp.Rashod_K_base_DP_E_7),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_7 - _mdp.Rashod_K_base_DP_E_7 * _mdp.Proiz_chug_uvel_K_DP_7,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_7 * _mdp.Proiz_chug_iz_PG_DP_7 + _mdp.Rashod_K_base_DP_E_7 * _mdp.Rashod_PG_base_DP_7 * _mdp.Proiz_chug_uvel_K_DP_7 + _mdp.Proizvoditelnost_chug_base_DP_7,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_7 + _mdp.Rashod_PG_base_DP_7 * _mdp.Iz_t_uvel_pg_DP_7 - _mdp.Teor_t_base_DP_7) / _mdp.Iz_t_uvel_pg_DP_7,
                 KoefNerav33 = (_mdp.Teor_t_base_DPmax_7 + _mdp.Rashod_PG_base_DP_7 * _mdp.Iz_t_uvel_pg_DP_7 - _mdp.Teor_t_base_DP_7) / _mdp.Iz_t_uvel_pg_DP_7,
-
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_7,
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_7,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_7,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_7,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_7,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_7,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_7,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_7,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_7,
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_7
 
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_7,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_7,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_7,
-                
             });
 
             //Для ДП8
@@ -791,41 +675,23 @@ namespace RAS_PR_GAZ
                 Koef = (_mdp.Rashod_K_base_DP_E_8 * _mdp.Stoimoct_k - _mdp.Stoimoct_pg),
                 KoefNerav1 = (-0.001 * _mdp.Rashod_K_base_DP_E_8),
                 KoefNerav11 = (_mdp.Rashod_K_base_DP_8 + 0.001 * _mdp.Rashod_PG_base_DP_8 * _mdp.Rashod_K_base_DP_E_8),
-
                 KoefNerav2 = _mdp.Proiz_chug_iz_PG_DP_8 - _mdp.Rashod_K_base_DP_E_8 * _mdp.Proiz_chug_uvel_K_DP_8,
                 KoefNerav22 = -_mdp.Rashod_PG_base_DP_8 * _mdp.Proiz_chug_iz_PG_DP_8 + _mdp.Rashod_K_base_DP_E_8 * _mdp.Rashod_PG_base_DP_8 * _mdp.Proiz_chug_uvel_K_DP_8 + _mdp.Proizvoditelnost_chug_base_DP_8,
-
-
                 KoefNerav3 = (_mdp.Teor_t_base_DPmin_8 + _mdp.Rashod_PG_base_DP_8 * _mdp.Iz_t_uvel_pg_DP_8 - _mdp.Teor_t_base_DP_8) / _mdp.Iz_t_uvel_pg_DP_8,
                 KoefNerav33 = (_mdp.Teor_t_base_DPmax_8 + _mdp.Rashod_PG_base_DP_8 * _mdp.Iz_t_uvel_pg_DP_8 - _mdp.Teor_t_base_DP_8) / _mdp.Iz_t_uvel_pg_DP_8,
-
-
-                Rashod_PG_base_DP = _mdp.Rashod_PG_base_DP_8,
                 Rashod_PG_base_DPmin = _mdp.Rashod_PG_base_DPmin_8,
-                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_8,
-                Rashod_K_base_DP = _mdp.Rashod_K_base_DP_8,
-                Rashod_K_base_DP_E = _mdp.Rashod_K_base_DP_E_8,
-                Proizvoditelnost_chug_base_DP = _mdp.Proizvoditelnost_chug_base_DP_8,
-                Teor_t_base_DP = _mdp.Teor_t_base_DP_8,
-                Teor_t_base_DPmin = _mdp.Teor_t_base_DPmin_8,
-                Teor_t_base_DPmax = _mdp.Teor_t_base_DPmax_8,
+                Rashod_PG_base_DPmax = _mdp.Rashod_PG_base_DPmax_8
 
-                Proiz_chug_iz_PG_DP = _mdp.Proiz_chug_iz_PG_DP_8,
-                Proiz_chug_uvel_K_DP = _mdp.Proiz_chug_uvel_K_DP_8,
-                Iz_t_uvel_pg_DP = _mdp.Iz_t_uvel_pg_DP_8,
-                
             });
 
 
             #endregion---
-
-
+            
             SolverContext context = SolverContext.GetContext();
             context.ClearModel();
             Model model = context.CreateModel();
             Set users = new Set(Domain.Any, "users");
-
-
+            
             Parameter Koef = new Parameter(Domain.Real, "Koef", users);
             Parameter KoefNerav1 = new Parameter(Domain.Real, "KoefNerav1", users);
             Parameter KoefNerav11 = new Parameter(Domain.Real, "KoefNerav11", users);
@@ -835,8 +701,7 @@ namespace RAS_PR_GAZ
             Parameter KoefNerav33 = new Parameter(Domain.Real, "KoefNerav33", users);
             Parameter Rashod_PG_base_DPmin = new Parameter(Domain.Real, "Rashod_PG_base_DPmin", users);
             Parameter Rashod_PG_base_DPmax = new Parameter(Domain.Real, "Rashod_PG_base_DPmax", users);
-
-
+            
             Koef.SetBinding(modelDPs, "Koef", "xId");
             KoefNerav1.SetBinding(modelDPs, "KoefNerav1", "xId");
             KoefNerav11.SetBinding(modelDPs, "KoefNerav11", "xId");
@@ -846,7 +711,6 @@ namespace RAS_PR_GAZ
             KoefNerav33.SetBinding(modelDPs, "KoefNerav33", "xId");
             Rashod_PG_base_DPmin.SetBinding(modelDPs, "Rashod_PG_base_DPmin", "xId");
             Rashod_PG_base_DPmax.SetBinding(modelDPs, "Rashod_PG_base_DPmax", "xId");
-
             
             model.AddParameters(
                 Koef,
@@ -856,31 +720,21 @@ namespace RAS_PR_GAZ
                 KoefNerav22,
                 KoefNerav3,
                 KoefNerav33,
-
                 Rashod_PG_base_DPmin,
                 Rashod_PG_base_DPmax
                 );
-
-
+            
             Decision choose = new Decision(Domain.RealNonnegative, "choose", users);
             model.AddDecision(choose);
 
-
             model.AddGoal("Z", GoalKind.Maximize, Model.Sum(Model.ForEach(users, xId => choose[xId] * Koef[xId])));
-
 
             model.AddConstraint("Z1", Model.ForEach(users, xId => (Rashod_PG_base_DPmin[xId] <= choose[xId] <= Rashod_PG_base_DPmax[xId])));
             model.AddConstraint("Z2", Model.Sum(Model.ForEach(users, xId => choose[xId])) <= _mdp.Rezerf_rashod_pg);
-
-
             model.AddConstraint("Nerav1", Model.Sum(Model.ForEach(users, xId => choose[xId] * KoefNerav1[xId] + KoefNerav11[xId])) <= _mdp.Zapas_k);
             model.AddConstraint("Nerav2", Model.Sum(Model.ForEach(users, xId => choose[xId] * KoefNerav2[xId] + KoefNerav22[xId])) >= _mdp.Treb_proiz_chug);
+            model.AddConstraint("Nerav3", Model.ForEach(users, xId => KoefNerav33[xId] <= choose[xId]  <= KoefNerav3[xId]));
             
-
-            model.AddConstraint("Nerav3", Model.ForEach(users, xId => choose[xId]  <= KoefNerav3[xId]));
-            model.AddConstraint("Nerav33", Model.ForEach(users, xId => choose[xId] >= KoefNerav33[xId]));
-
-
             try
             {
                 Solution solution = context.Solve();
@@ -900,8 +754,7 @@ namespace RAS_PR_GAZ
             {
                 MessageBox.Show("При решении задачи оптимизации возникла исключительная ситуация.");
             }
-
-
+            
             _mdp.DP1 = Math.Round(choose.GetDouble(modelDPs[0].xId), 2);
             _mdp.DP2 = Math.Round(choose.GetDouble(modelDPs[1].xId), 2);
             _mdp.DP3 = Math.Round(choose.GetDouble(modelDPs[2].xId), 2);
@@ -910,8 +763,7 @@ namespace RAS_PR_GAZ
             _mdp.DP6 = Math.Round(choose.GetDouble(modelDPs[5].xId), 2);
             _mdp.DP7 = Math.Round(choose.GetDouble(modelDPs[6].xId), 2);
             _mdp.DP8 = Math.Round(choose.GetDouble(modelDPs[7].xId), 2);
-
-
+            
             txtDP1.Text = _mdp.DP1.ToString();
             txtDP2.Text = _mdp.DP2.ToString();
             txtDP3.Text = _mdp.DP3.ToString();
@@ -920,8 +772,7 @@ namespace RAS_PR_GAZ
             txtDP6.Text = _mdp.DP6.ToString();
             txtDP7.Text = _mdp.DP7.ToString();
             txtDP8.Text = _mdp.DP8.ToString();
-
-
+            
             double z = 0;
             for (int i = 0; i < 8; i++)
             {
@@ -950,9 +801,7 @@ namespace RAS_PR_GAZ
             this.chart1.Series[1].Points.AddXY("ДП6", choose.GetDouble(modelDPs[5].xId));
             this.chart1.Series[1].Points.AddXY("ДП7", choose.GetDouble(modelDPs[6].xId));
             this.chart1.Series[1].Points.AddXY("ДП8", choose.GetDouble(modelDPs[7].xId));
-
-
-
+            
         }
 
         private void lim_KeyPress(object sender, KeyPressEventArgs e)

@@ -9,15 +9,6 @@ namespace RAS_PR_GAZ
     class ModelDP
     {
         #region---Надо
-        /// <summary>
-        /// Расход природного газа в базовом периоде, м3/ч
-        /// </summary> 
-        private double _Rashod_PG_base_DP;    // закрытая переменная класса 
-        public double Rashod_PG_base_DP
-        {
-            get { return _Rashod_PG_base_DP; }
-            set { _Rashod_PG_base_DP = value; }
-        }
 
         /// <summary>
         /// Минимально допустимый расход природного газа, м3/ч
@@ -38,97 +29,7 @@ namespace RAS_PR_GAZ
             get { return _Rashod_PG_base_DPmax; }
             set { _Rashod_PG_base_DPmax = value; }
         }
-
-        /// <summary>
-        /// Расход кокса в базовом периоде, т/час
-        /// </summary> 
-        private double _Rashod_K_base_DP;    // закрытая переменная класса 
-        public double Rashod_K_base_DP
-        {
-            get { return _Rashod_K_base_DP; }
-            set { _Rashod_K_base_DP = value; }
-        }
-
-        /// <summary>
-        /// Эквивалент замены кокса в базовом периоде, кг кокса /(м3 ПГ)
-        /// </summary> 
-        private double _Rashod_K_base_DP_E;    // закрытая переменная класса 
-        public double Rashod_K_base_DP_E
-        {
-            get { return _Rashod_K_base_DP_E; }
-            set { _Rashod_K_base_DP_E = value; }
-        }
-
-        /// <summary>
-        /// Производительность по чугуну в базовом периоде, т /ч
-        /// </summary> 
-        private double _Proizvoditelnost_chug_base_DP;    // закрытая переменная класса 
-        public double Proizvoditelnost_chug_base_DP
-        {
-            get { return _Proizvoditelnost_chug_base_DP; }
-            set { _Proizvoditelnost_chug_base_DP = value; }
-        }
-
-        /// <summary>
-        /// Теоретическая температура горения в базовом периоде, °С
-        /// </summary> 
-        private double _Teor_t_base_DP;    // закрытая переменная класса 
-        public double Teor_t_base_DP
-        {
-            get { return _Teor_t_base_DP; }
-            set { _Teor_t_base_DP = value; }
-        }
-
-        /// <summary>
-        /// Минимально допустимая теоретическая температура горения, °С
-        /// </summary> 
-        private double _Teor_t_base_DPmin;    // закрытая переменная класса 
-        public double Teor_t_base_DPmin
-        {
-            get { return _Teor_t_base_DPmin; }
-            set { _Teor_t_base_DPmin = value; }
-        }
-
-        /// <summary>
-        /// Максимально допустимая теоретическая температура горения, °С
-        /// </summary> 
-        private double _Teor_t_base_DPmax;    // закрытая переменная класса 
-        public double Teor_t_base_DPmax
-        {
-            get { return _Teor_t_base_DPmax; }
-            set { _Teor_t_base_DPmax = value; }
-        }
-
-
-        /// <summary>
-        /// Изменение производства чугуна при изменении ПГ, т чуг/(м3 ПГ)
-        /// </summary> 
-        private double _Proiz_chug_iz_PG_DP;    // закрытая переменная класса 
-        public double Proiz_chug_iz_PG_DP
-        {
-            get { return _Proiz_chug_iz_PG_DP; }
-            set { _Proiz_chug_iz_PG_DP = value; }
-        }
-
-        /// <summary>
-        /// Изменение производства чугуна при увеличении расхода кокса, т чуг/(кг кокса)
-        /// </summary> 
-        private double _Proiz_chug_uvel_K_DP;    // закрытая переменная класса 
-        public double Proiz_chug_uvel_K_DP
-        {
-            get { return _Proiz_chug_uvel_K_DP; }
-            set { _Proiz_chug_uvel_K_DP = value; }
-        }
-
-        /// <summary>
-        /// Изменение температуры горения при увеличении расхода ПГ на 1 м3/ч
-        /// </summary> 
-        private double _Iz_t_uvel_pg_DP;    // закрытая переменная класса 
-        public double Iz_t_uvel_pg_DP
-        {
-            get { return _Iz_t_uvel_pg_DP; }
-            set { _Iz_t_uvel_pg_DP = value; }
-        }
+        
         #endregion---Для ДП1
         
         #region--- Технологические параметры
